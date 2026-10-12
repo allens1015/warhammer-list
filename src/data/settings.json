@@ -1,0 +1,10 @@
+{
+  "compositions": [
+    { "maxPoints": 1999, "minCore": 2, "maxSpecial": 3, "maxRare": 1, "maxCharacters": 3, "maxLords": 0 },
+    { "maxPoints": 2999, "minCore": 3, "maxSpecial": 4, "maxRare": 2, "maxCharacters": 4, "maxLords": 1 },
+    { "maxPoints": 3999, "minCore": 4, "maxSpecial": 5, "maxRare": 3, "maxCharacters": 6, "maxLords": 2 },
+    { "maxPoints": 4999, "minCore": 5, "maxSpecial": 6, "maxRare": 4, "maxCharacters": 8, "maxLords": 3 }
+  ],
+  "pointsCapDefault": 2000,
+  "pointsThresholdOffset": 200
+}

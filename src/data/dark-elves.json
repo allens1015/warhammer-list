@@ -1,0 +1,1036 @@
+[
+    {
+        "name": "Malekith, the Witch King",
+        "category": "lord",
+        "type": "model",
+        "pointsCost": 600,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "slotsUsed": {
+            "lord": 1,
+            "hero": 1
+        },
+        "repeatable": false,
+        "mounts": [
+            {
+                "name": "Malekith, the Witch King (on Foot)",
+                "pointsCost": 600
+            },
+            {
+                "name": "Malekith, the Witch King (on Cold One)",
+                "pointsCost": 630
+            },
+            {
+                "name": "Malekith, the Witch King (on Black Dragon)",
+                "pointsCost": 920
+            },
+            {
+                "name": "Malekith, the Witch King (on Black Chariot with one other crewman)",
+                "pointsCost": 710
+            }
+        ]
+    },
+    {
+        "name": "Morathi, the Hag Sorceress",
+        "category": "lord",
+        "type": "model",
+        "pointsCost": 455,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "repeatable": false,
+        "choices": [
+            {
+                "name": "Morathi, the Hag Sorceress (with Heartrender)",
+                "pointsCost": 500
+            },
+            {
+                "name": "Morathi, the Hag Sorceress (with Darksword)",
+                "pointsCost": 480
+            }
+        ]
+    },
+    {
+        "name": "Crone Hellebron, the Hag Queen",
+        "category": "lord",
+        "type": "model",
+        "pointsCost": 350,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "repeatable": false,
+        "mounts": [
+            {
+                "name": "Crone Hellebron, the Hag Queen (on Foot)",
+                "pointsCost": 350
+            },
+            {
+                "name": "Crone Hellebron, the Hag Queen (on Manticore)",
+                "pointsCost": 550
+            }
+        ]
+    },
+    {
+        "name": "Dreadlord",
+        "category": "lord",
+        "type": "model",
+        "pointsCost": 140,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "mounts": [
+            {
+                "name": "Dreadlord (on Foot)",
+                "pointsCost": 140
+            },
+            {
+                "name": "Dreadlord (on Dark Steed)",
+                "pointsCost": 158
+            },
+            {
+                "name": "Dreadlord (on Cold One)",
+                "pointsCost": 170
+            },
+            {
+                "name": "Dreadlord (on Dark Pegasus)",
+                "pointsCost": 190
+            },
+            {
+                "name": "Dreadlord (on Manticore)",
+                "pointsCost": 340
+            },
+            {
+                "name": "Dreadlord (on Black Dragon)",
+                "pointsCost": 360,
+                "slotsUsed": {
+                    "lord": 1,
+                    "hero": 1
+                }
+            },
+            {
+                "name": "Dreadlord (on Cold One Chariot, replacing one crew)",
+                "pointsCost": 230
+            }
+        ]
+    },
+    {
+        "name": "Supreme Sorceress",
+        "category": "lord",
+        "type": "model",
+        "pointsCost": 225,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "mounts": [
+            {
+                "name": "Supreme Sorceress (on Foot)",
+                "pointsCost": 225
+            },
+            {
+                "name": "Supreme Sorceress (on Dark Steed)",
+                "pointsCost": 243
+            },
+            {
+                "name": "Supreme Sorceress (on Cold One)",
+                "pointsCost": 255
+            },
+            {
+                "name": "Supreme Sorceress (on Dark Pegasus)",
+                "pointsCost": 275
+            },
+            {
+                "name": "Supreme Sorceress (on Manticore)",
+                "pointsCost": 425
+            },
+            {
+                "name": "Supreme Sorceress (on Black Dragon)",
+                "pointsCost": 545
+            }
+        ]
+    },
+    {
+        "name": "Malus Darkblade, Scion of Hag Graef",
+        "category": "hero",
+        "type": "model",
+        "pointsCost": 275,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "repeatable": false
+    },
+    {
+        "name": "Shadowblade, Master of Assassins",
+        "category": "hero",
+        "type": "model",
+        "pointsCost": 300,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "repeatable": false
+    },
+    {
+        "name": "Lokhir Fellheart, Captain of the Tower of Blessed Dread",
+        "category": "hero",
+        "type": "model",
+        "pointsCost": 250,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "repeatable": false
+    },
+    {
+        "name": "Sorceress",
+        "category": "hero",
+        "type": "model",
+        "pointsCost": 100,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "mounts": [
+            {
+                "name": "Sorceress (on Foot)",
+                "pointsCost": 100
+            },
+            {
+                "name": "Sorceress (on Dark Steed)",
+                "pointsCost": 112
+            },
+            {
+                "name": "Sorceress (on Cold One)",
+                "pointsCost": 120
+            },
+            {
+                "name": "Sorceress (on Dark Pegasus)",
+                "pointsCost": 150
+            }
+        ]
+    },
+    {
+        "name": "Master",
+        "category": "hero",
+        "type": "model",
+        "pointsCost": 80,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "mounts": [
+            {
+                "name": "Master (on Foot)",
+                "pointsCost": 80
+            },
+            {
+                "name": "Master (on Dark Steed)",
+                "pointsCost": 92
+            },
+            {
+                "name": "Master (on Cold One)",
+                "pointsCost": 100
+            },
+            {
+                "name": "Master (on Dark Pegasus)",
+                "pointsCost": 130
+            },
+            {
+                "name": "Master (on Manticore)",
+                "pointsCost": 280,
+                "slotsUsed": {
+                    "hero": 2
+                }
+            },
+            {
+                "name": "Master (on Cold One Chariot, replacing one crew)",
+                "pointsCost": 170
+            }
+        ]
+    },
+    {
+        "name": "Death Hag",
+        "category": "hero",
+        "type": "model",
+        "pointsCost": 90,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "mounts": [
+            {
+                "name": "Death Hag (on Foot)",
+                "pointsCost": 90
+            },
+            {
+                "name": "Death Hag (on Cauldron of Blood)",
+                "pointsCost": 200
+            }
+        ]
+    },
+    {
+        "name": "Dark Elf Warriors",
+        "category": "core",
+        "type": "model",
+        "pointsCost": 6,
+        "count": 10,
+        "minSize": 10,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Lordling", "pointsCost": 6 },
+            { "role": "musician", "pointsCost": 3 },
+            { "role": "standard", "pointsCost": 6, "magicStandard": 25 }
+        ],
+        "options": [
+            { "name": "Shield", "pointsCost": 1, "perModel": true }
+        ]
+    },
+    {
+        "name": "Dark Elf Repeater Crossbowmen",
+        "category": "core",
+        "type": "model",
+        "pointsCost": 10,
+        "count": 10,
+        "minSize": 10,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Guardmaster", "pointsCost": 5 },
+            { "role": "musician", "pointsCost": 5 },
+            { "role": "standard", "pointsCost": 10 }
+        ],
+        "options": [
+            { "name": "Shield", "pointsCost": 1, "perModel": true }
+        ]
+    },
+    {
+        "name": "Black Ark Corsairs",
+        "category": "core",
+        "type": "model",
+        "pointsCost": 10,
+        "count": 10,
+        "minSize": 10,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Reaver", "pointsCost": 10 },
+            { "role": "musician", "pointsCost": 5 },
+            { "role": "standard", "pointsCost": 10, "magicStandard": 25 }
+        ],
+        "options": [
+            { "name": "Swap hand weapon for handbow", "pointsCost": 0 },
+            { "name": "Pair of handbows for Reaver", "pointsCost": 3, "requires": "champion" }
+        ]
+    },
+    {
+        "name": "Dark Riders",
+        "category": "core",
+        "type": "model",
+        "pointsCost": 17,
+        "count": 5,
+        "minSize": 5,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Herald", "pointsCost": 14 },
+            { "role": "musician", "pointsCost": 7 },
+            { "role": "standard", "pointsCost": 14 }
+        ],
+        "options": [
+            { "name": "Shield", "pointsCost": 1, "perModel": true },
+            { "name": "Repeater Crossbows", "pointsCost": 5, "perModel": true }
+        ]
+    },
+    {
+        "name": "Harpies",
+        "category": "core",
+        "type": "model",
+        "pointsCost": 11,
+        "count": 5,
+        "minSize": 5,
+        "maxSize": 10,
+        "countsAsCore": false,
+        "image": "",
+        "description": ""
+    },
+    {
+        "name": "Dark Elf Assassin",
+        "category": "core",
+        "type": "model",
+        "pointsCost": 90,
+        "count": 1,
+        "countsAsCore": false,
+        "image": "",
+        "description": "",
+        "giftsOfKhaine": 75,
+        "options": [
+            { "name": "Additional hand weapon", "pointsCost": 6 },
+            { "name": "Repeater handbow", "pointsCost": 10 }
+        ]
+    },
+    {
+        "name": "Witch Elves",
+        "category": "special",
+        "type": "model",
+        "pointsCost": 10,
+        "count": 5,
+        "minSize": 5,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Hag", "pointsCost": 10, "giftsOfKhaine": 25 },
+            { "role": "musician", "pointsCost": 5 },
+            { "role": "standard", "pointsCost": 10, "magicStandard": 25 }
+        ]
+    },
+    {
+        "name": "Shades",
+        "category": "special",
+        "type": "model",
+        "pointsCost": 16,
+        "count": 5,
+        "minSize": 5,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Bloodshade", "pointsCost": 18 }
+        ],
+        "options": [
+            { "name": "Great weapon", "pointsCost": 2, "perModel": true, "group": "weapon" },
+            { "name": "Additional hand weapon", "pointsCost": 1, "perModel": true, "group": "weapon" },
+            { "name": "Light armour", "pointsCost": 1, "perModel": true }
+        ]
+    },
+    {
+        "name": "Har Ganeth Executioners",
+        "category": "special",
+        "type": "model",
+        "pointsCost": 12,
+        "count": 5,
+        "minSize": 5,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Draich-master", "pointsCost": 12 },
+            { "role": "champion", "name": "Tullaris of Har Ganeth", "pointsCost": 95, "repeatable": false },
+            { "role": "musician", "pointsCost": 6 },
+            { "role": "standard", "pointsCost": 12, "magicStandard": 25 }
+        ]
+    },
+    {
+        "name": "Cold One Knights",
+        "category": "special",
+        "type": "model",
+        "pointsCost": 27,
+        "count": 5,
+        "minSize": 5,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Dread Knight", "pointsCost": 16, "magicItems": 25 },
+            { "role": "musician", "pointsCost": 8 },
+            { "role": "standard", "pointsCost": 16, "magicStandard": 50 }
+        ]
+    },
+    {
+        "name": "Cold One Chariot",
+        "category": "special",
+        "type": "model",
+        "pointsCost": 100,
+        "count": 1,
+        "image": "",
+        "description": ""
+    },
+    {
+        "name": "Black Guard of Naggarond",
+        "category": "special",
+        "type": "model",
+        "pointsCost": 13,
+        "count": 5,
+        "minSize": 5,
+        "maxSize": 20,
+        "image": "",
+        "description": "",
+        "command": [
+            { "role": "champion", "name": "Tower Master", "pointsCost": 14, "magicItems": 25 },
+            { "role": "champion", "name": "Kouran of the Black Guard", "pointsCost": 75, "repeatable": false },
+            { "role": "musician", "pointsCost": 7 },
+            { "role": "standard", "pointsCost": 14, "magicStandard": 50 }
+        ]
+    },
+    {
+        "name": "Reaper Bolt Thrower",
+        "category": "rare",
+        "type": "model",
+        "pointsCost": 100,
+        "count": 1,
+        "image": "",
+        "description": "",
+        "maxPerSlot": 2
+    },
+    {
+        "name": "War Hydra",
+        "category": "rare",
+        "type": "model",
+        "pointsCost": 175,
+        "count": 1,
+        "image": "",
+        "description": ""
+    },
+    {
+        "name": "Sword of Striking",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 15,
+        "image": "",
+        "description": "Weapon; +1 to hit"
+    },
+    {
+        "name": "Sword of Battle",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 15,
+        "image": "",
+        "description": "Weapon; +1 Attack"
+    },
+    {
+        "name": "Sword of Might",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 15,
+        "image": "",
+        "description": "Weapon; +1 Strength"
+    },
+    {
+        "name": "Biting Blade",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 5,
+        "image": "",
+        "description": "Weapon; -1 armour save"
+    },
+    {
+        "name": "Enchanted Shield",
+        "category": "magic",
+        "type": "magic_armour",
+        "pointsCost": 15,
+        "image": "",
+        "description": "Armour; 5+ armour save"
+    },
+    {
+        "name": "Talisman of Protection",
+        "category": "magic",
+        "type": "talisman",
+        "pointsCost": 15,
+        "image": "",
+        "description": "Talisman; 6+ ward save"
+    },
+    {
+        "name": "Staff of Sorcery",
+        "category": "magic",
+        "type": "arcane_item",
+        "pointsCost": 35,
+        "image": "",
+        "description": "Arcane; +1 to dispel"
+    },
+    {
+        "name": "Dispel Scroll",
+        "category": "magic",
+        "type": "arcane_item",
+        "pointsCost": 25,
+        "image": "",
+        "repeatable": true,
+        "description": "Arcane; one use only; Automatically dispel an enemy spell."
+    },
+    {
+        "name": "Power Stone",
+        "category": "magic",
+        "type": "arcane_item",
+        "pointsCost": 20,
+        "image": "",
+        "repeatable": true,
+        "description": "Arcane; one use only; +2 dice to cast a spell."
+    },
+    {
+        "name": "War Banner",
+        "category": "magic",
+        "type": "magic_standard",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Banner; +1 combat resolution"
+    },
+    {
+        "name": "Deathmask",
+        "category": "magic",
+        "type": "enchanted_item",
+        "pointsCost": 50,
+        "image": "",
+        "description": "Made from enchanted gold of the Blackspine Mountains, the Deathmask depicts Khaine in his aspect of the Deathbringer, the merciless slayer.<br>The character causes terror."
+    },
+    {
+        "name": "The Hydra's Teeth",
+        "category": "magic",
+        "type": "enchanted_item",
+        "pointsCost": 40,
+        "image": "",
+        "description": "Taken from the corpse of a slain War Hydra, each of these fangs is finely sculpted into a skeletal figurine. They are enchanted with dark magic to summon forth those slain by the Hydra while it was alive.<br>The model has five Hydra's Teeth. Each can be used once as a thrown weapon with a range of 12\". Declare how many of its Hydra's Teeth the model is throwing before rolling to hit – there is no 'multiple shots' penalty for throwing more than one tooth at a time. For each hit, make D6 WS2 S3 close combat attacks against the target unit. Up to two attacks per turn can be allocated by the Dark Elves player against each character or Champion in the unit."
+    },
+    {
+        "name": "Crystal of Midnight",
+        "category": "magic",
+        "type": "enchanted_item",
+        "pointsCost": 35,
+        "image": "",
+        "description": "Inside this black glowing crystal is a malignant captured spirit, which can be unleashed to seek out the mind of an enemy magic user and steal their thoughts.<br>One use only. Nominate another Wizard anywhere on the table at the start of any Dark Elves turn. The Wizard must pass a Leadership test on 3D6 otherwise they forget one randomly determined spell for the rest of the battle."
+    },
+    {
+        "name": "Black Dragon Egg",
+        "category": "magic",
+        "type": "enchanted_item",
+        "pointsCost": 30,
+        "image": "",
+        "description": "Many of the eggs laid by Malekith's Black Dragons do not develop into full hatchlings. When eaten, the properties of the Dragon are temporarily passed on.<br>One use only. The model may consume the Black Dragon Egg at the start of any player turn. For the remainder of that turn the model has Toughness 6 and the Noxious Breath attack (see page 61)."
+    },
+    {
+        "name": "Potion of Strength",
+        "category": "magic",
+        "type": "enchanted_item",
+        "pointsCost": 30,
+        "image": "",
+        "description": "A potent magical brew created from Troll blood and the heart of a Griffon.<br>One use only. The model may drink this at the start of any close combat and it lasts until the start of the next player's turn. While it is in effect, the Potion of Strength grants +3 Strength."
+    },
+    {
+        "name": "Gem of Nightmares",
+        "category": "magic",
+        "type": "enchanted_item",
+        "pointsCost": 25,
+        "image": "",
+        "description": "When the magic of this dark stone is unleashed, the bearer is surrounded by a vortex of whirling, wailing apparitions that burn with dark flames.<br>One use only. The Gem of Nightmares can be used at the start of any turn. Until the end of that turn, the model and any unit it has joined cause Fear."
+    },
+    {
+        "name": "The Guiding Eye",
+        "category": "magic",
+        "type": "enchanted_item",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Wrought in black iron with a oval ruby at its centre, the Guiding Eye grants mystical sight to the wearer.<br>One use only. The character and any unit he joins may re-roll missed shooting to hit rolls."
+    },
+    {
+        "name": "Executioner's Axe (Models on foot only)",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 80,
+        "image": "",
+        "description": "The Executioner's Axe is a huge, black-bladed weapon bound with spells of dismemberment. A single blow from it can cut any opponent in half.<br>Requires two hands. Strikes last. In close combat, the wielder counts as having a Strength double that of their target's Toughness, up to a maximum of Strength 10. In addition, the Executioner's Axe causes D3 wounds."
+    },
+    {
+        "name": "Sword of Ruin",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 50,
+        "image": "",
+        "description": "This magical sword can cleave through armour as if it were air.<br>No armour saves may be taken against hits from the Sword of Ruin."
+    },
+    {
+        "name": "Web of Shadows",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 50,
+        "image": "",
+        "description": "Woven from the hair of Witch Elves and studded with ensorcelled Harpy fangs, a victim caught in the Web of Shadows will be ripped to shreds.<br>One use only. The character uses the Web of Shadows instead of making any normal attacks that round. When used, one model in base contact with the character automatically takes 2D6 Strength 3 hits. Wounds caused do not carry over on to other models. A model with the Web of Shadows may instead choose to use a mundane weapon in any round of combat."
+    },
+    {
+        "name": "Chillblade",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 50,
+        "image": "",
+        "description": "This sword holds a terrible spell of coldness that seeps into the Dark Elf's victim, freezing their soul and temporarily paralysing them.<br>Enemy models suffering hits from the Chillblade must pass a Toughness test for every hit. If a test is failed the model suffers a wound with no armour save. Models suffering a wound (after ward saves, etc) may not make any close combat attacks that turn. No normal roll to wound is made for attacks with the Chillblade."
+    },
+    {
+        "name": "Heartseeker",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 35,
+        "image": "",
+        "description": "Heartseeker has an uncanny ability to find the heart of a living thing. Dark Elves delight in its ability to destroy the lifeforce of their victims.<br>The character may re-roll all failed rolls to hit and to wound in close combat."
+    },
+    {
+        "name": "Hydra Blade",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 35,
+        "image": "",
+        "description": "The Hydra Blade strikes repeatedly, like its many-headed namesake.<br>A character wielding the Hydra Blade gains D3 additional attacks (roll just before making attacks)."
+    },
+    {
+        "name": "Caledor's Bane",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 35,
+        "image": "",
+        "description": "This dire lance is etched with the fiery blood of Dragons and is much feared by High Elf Princes from the realm of Caledor.<br>+3 Strength on the charge. Models may not use Scaly Skin saving throws against hits from Caledor's Bane."
+    },
+    {
+        "name": "Dagger of Hotek",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 30,
+        "image": "",
+        "description": "Created by Hotek, a renegade priest of Vaul, this blade allows the wielder to strike with blinding speed.<br>The Dagger of Hotek is an additional hand weapon, (it can be used with a mundane hand weapon) and grants the bearer the Always Strikes First special rule."
+    },
+    {
+        "name": "Lifetaker",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 30,
+        "image": "",
+        "description": "Lifetaker is a repeater crossbow fashioned from blackest steel, with bolts dipped in the venom of a Black Dragon.<br>Range: 30\"   Str: 4   Rules: Multiple Shot x3<br>Lifetaker always hits on a roll of 2+, regardless of any to hit modifiers, magic items, etc."
+    },
+    {
+        "name": "Crimson Death",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 25,
+        "image": "",
+        "description": "This huge halberd was carried to battle by Dark Lord Khalak of Ghrond, the first Captain of the Black Guard. It has been passed down to every Captain to have succeeded him.<br>Requires two hands to use. A model wielding Crimson Death always strikes with Strength 6. No other modifiers or magic items can ever modify this."
+    },
+    {
+        "name": "Deathpiercer",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 25,
+        "image": "",
+        "description": "This lance is tipped with a blade carved from the claws of two dozen Cold Ones. It leaves ragged wounds that see its victims swiftly bleed to death.<br>Lance. Killing blow."
+    },
+    {
+        "name": "Whip of Agony",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Belonging to the feared Beastlord Rakarth, the Whip of Agony inflicts pain that even the most thick-skinned and mindless creature can feel.<br>Beastmaster's scourge. A model wielding the Whip of Agony always strikes with Strength 5. No other modifiers or magic items can ever modify this."
+    },
+    {
+        "name": "Soulrender",
+        "category": "magic",
+        "type": "magic_weapon",
+        "pointsCost": 15,
+        "image": "",
+        "description": "When it was forged, this long blade was quenched in a Cauldron of Blood and can slice through steel as easily as bone.<br>Great weapon. Armour piercing."
+    },
+    {
+        "name": "Armour of Living Death",
+        "category": "magic",
+        "type": "magic_armour",
+        "pointsCost": 60,
+        "image": "",
+        "description": "It is claimed that anyone wearing this armour cannot die, sustained by its magical energy. Unfortunately, they cannot remove the armour and are driven insane by its magic.<br>Heavy armour. In addition, the model has +1 Toughness and +1 Wound. Roll a D6 before deploying any models. On a roll of a 1, the wearer succumbs to the Armour of Living Death and is subject to stupidity for the battle."
+    },
+    {
+        "name": "Armour of Eternal Servitude",
+        "category": "magic",
+        "type": "magic_armour",
+        "pointsCost": 35,
+        "image": "",
+        "description": "Oaths of loyalty and dedication to Khaine were sworn at the time of the armour's forging, and the wearer is granted extended life to serve their god.<br>Heavy armour. The wearer can Regenerate."
+    },
+    {
+        "name": "Cloak of Hag Graef",
+        "category": "magic",
+        "type": "magic_armour",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Made from the scales of Aggraunir, the first sea dragon to be captured by the Dark Elves, the Cloak of Hag Graef can withstand the harshest of blows.<br>Sea Dragon cloak. In addition, any ranged attack hits on the character (including shooting, magic missiles and other spells with a Strength value) have their Strength halved before rolling to wound (rounding up)."
+    },
+    {
+        "name": "Armour of Darkness",
+        "category": "magic",
+        "type": "magic_armour",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Forged from black meteoric steel, this suit is almost impossible to pierce.<br>This armour gives a total save of 1+ that cannot be further increased in any way (with a shield, chariot, mount and so on)."
+    },
+    {
+        "name": "Shield of Ghrond",
+        "category": "magic",
+        "type": "magic_armour",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Shaped into the leering face of an Ice Daemon, the shield of Ghrond is imbued with the power of the magical North wind, which robs attacks of their force.<br>The Shield of Ghrond is treated like a normal shield, and in addition all hits the character suffers will be resolved with -1 Strength."
+    },
+    {
+        "name": "Blood Armour",
+        "category": "magic",
+        "type": "magic_armour",
+        "pointsCost": 15,
+        "image": "",
+        "description": "When anointed with the blood of the foe, this armour becomes ever more endurable.<br>Heavy armour. For every unsaved wound the wearer inflicts in close combat, this save is improved by one point (to 4+ then 3+, etc) to a maximum total of 1+ (including any other bonuses for a shield, Sea Dragon cloak, and so on)."
+    },
+    {
+        "name": "Black Amulet",
+        "category": "magic",
+        "type": "talisman",
+        "pointsCost": 70,
+        "image": "",
+        "description": "Cast from the heartstone of a mountain tainted with the power of Dark Sorcery, the Black Amulet is a lustrous polished stone of midnight hue, engraved with a single glowing rune.<br>The wearer has a 4+ ward save. If the wearer of the Black Amulet passes their ward save in close combat, then the attacking model suffers 1 wound instead (with no armour save allowed)."
+    },
+    {
+        "name": "Ring of Darkness",
+        "category": "magic",
+        "type": "talisman",
+        "pointsCost": 40,
+        "image": "",
+        "description": "Billowing black smoke emerges from the opal set into this ring, clouding the wearer's position.<br>All close combat attacks directed against the model are at half WS. Any shooting at the character or their unit is at half BS. Round fractions up."
+    },
+    {
+        "name": "Pendant of Khaeleth",
+        "category": "magic",
+        "type": "talisman",
+        "pointsCost": 35,
+        "image": "",
+        "description": "Worn by the first High Mistress of the Dark Convent, this amulet's protective aura grows greater the stronger the blow landed upon it.<br>This gives a ward save, based upon the Strength of the hit. Roll a D6 for every wound suffered by the wearer, on a roll equal to or under the attack's Strength, the hit is ignored. Rolls of 6 always fail."
+    },
+    {
+        "name": "Seal of Ghrond",
+        "category": "magic",
+        "type": "talisman",
+        "pointsCost": 30,
+        "image": "",
+        "description": "This iron seal is blessed by the priestesses of Khaine to ward away hated magic.<br>Add 1 dice to the dispel dice pool."
+    },
+    {
+        "name": "Pearl of Infinite Bleakness",
+        "category": "magic",
+        "type": "talisman",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Swirled with red and black veins, this magical pearl emits an aura of soul-numbing depression.<br>The character and his unit are Immune to Psychology."
+    },
+    {
+        "name": "Ring of Hotek",
+        "category": "magic",
+        "type": "talisman",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Hotek the renegade priest of Vaul made this ring to protect himself from the magical forces used in the forging of his artefacts.<br>Any Wizard (friend or foe) attempting to cast or target a spell within 12\" of the wearer will suffer a Miscast on the roll of any double."
+    },
+    {
+        "name": "Null Talisman",
+        "category": "magic",
+        "type": "talisman",
+        "pointsCost": 15,
+        "image": "",
+        "description": "These silver pendants ward away the energy of Chaos.<br>The Null Talisman grants magic resistance (1). Models may carry multiple Null Talismans, just like scrolls, and their effects are cumulative. For example, two Talismans confer magic resistance (2)."
+    },
+    {
+        "name": "Black Staff",
+        "category": "magic",
+        "type": "arcane_item",
+        "pointsCost": 55,
+        "image": "",
+        "description": "A Black Staff is the much-desired talisman of one of the six High Mistresses of the Convent of Sorceresses.<br>Bound Spell, Power Level 4. Contains the Power of Darkness spell (page 63)."
+    },
+    {
+        "name": "Focus Familiar",
+        "category": "magic",
+        "type": "arcane_item",
+        "pointsCost": 25,
+        "image": "",
+        "description": "An impish familiar accompanies the Sorceress, through which she can direct her powers. This allows her to target enemies further away and out of sight.<br>The Focus Familiar allows the wielder to cast spells from a different position on the battlefield. Place a marker at the start of each Dark Elf Magic phase within 6\" of the Sorceress and at least 1\" away from enemies. She may use this position when determining range and line of sight for her spells, and whether she counts as in combat or not."
+    },
+    {
+        "name": "Darkstar Cloak",
+        "category": "magic",
+        "type": "arcane_item",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Woven into the fabric of this cloak is the essence of a star stolen from the night sky of Nagarythe.<br>The cloak gives the Sorceress +1 power dice in each Magic phase. Only she may use this extra dice."
+    },
+    {
+        "name": "Sacrificial Dagger",
+        "category": "magic",
+        "type": "arcane_item",
+        "pointsCost": 25,
+        "image": "",
+        "description": "Bound with enchantments of bloodletting and spirit-binding, the sacrificial dagger is used to leech the life force from its victims and channel it into raw magic.<br>Once per spell-casting attempt, after the casting dice have been rolled, the Sorceress may sacrifice a model in a unit she has joined – the model is removed immediately. The Sorceress gains a power dice that must be rolled and added to the casting total (before dispel attempts). Note that it is possible for the unit to require a panic test if she sacrifices 25+% of the unit in a single Magic Phase!"
+    },
+    {
+        "name": "Tome of Furion",
+        "category": "magic",
+        "type": "arcane_item",
+        "pointsCost": 15,
+        "image": "",
+        "description": "The Dark Elf Furion of Clar Karond inscribed this book onto sheets of flayed Orcskin to teach the Path of Darkness to the uninitiated.<br>The Tome of Furion grants its bearer 1 additional spell."
+    },
+    {
+        "name": "Banner of Nagarythe",
+        "category": "magic",
+        "type": "magic_standard",
+        "pointsCost": 125,
+        "image": "",
+        "description": "The Banner of Nagarythe, the standard of Northern Ulthuan that now lies beneath the ocean, is the personal banner of the Witch King, proclaiming his reign over the Elven Kingdoms.<br>This standard gives an additional +1 to the combat resolution score of friendly units in combat within 12\", and the unit containing the banner is Unbreakable."
+    },
+    {
+        "name": "Hydra Banner",
+        "category": "magic",
+        "type": "magic_standard",
+        "pointsCost": 75,
+        "image": "",
+        "description": "Imbued with the magic of Hekarti the Hydra Queen, this banner quickens the reflexes so that those nearby strike with her own speed and savagery.<br>All models in the unit gain +1 Attack in the first round of any hand-to-hand combat (including mounts)."
+    },
+    {
+        "name": "Dread Banner",
+        "category": "magic",
+        "type": "magic_standard",
+        "pointsCost": 40,
+        "image": "",
+        "description": "Such is the supernatural fear instilled by the visage of the Bloody Handed God upon this standard that few dare to even look at it.<br>The unit carrying this standard causes Fear."
+    },
+    {
+        "name": "Standard of Slaughter",
+        "category": "magic",
+        "type": "magic_standard",
+        "pointsCost": 35,
+        "image": "",
+        "description": "Anointed with the blood of an Ulthuan Elf, this banner imbues its regiment with a bitter determination.<br>On any turn the unit with the Standard of Slaughter charges, the banner adds +D3 to the unit's combat resolution."
+    },
+    {
+        "name": "Standard of Hag Graef",
+        "category": "magic",
+        "type": "magic_standard",
+        "pointsCost": 35,
+        "image": "",
+        "description": "Under the mystical influence of this serpentine banner, warriors strike with astounding speed.<br>All models in the unit containing the Standard of Hag Graef gain the Always Strikes First rule."
+    },
+    {
+        "name": "Sea Serpent Standard (Corsairs only)",
+        "category": "magic",
+        "type": "magic_standard",
+        "onlyFor": ["Black Ark Corsairs"],
+        "pointsCost": 25,
+        "image": "",
+        "description": "The legendary standard of Kaldour the Visionary, this banner carries the device of a monstrous serpent.<br>The unit is subject to the rules for Frenzy."
+    },
+    {
+        "name": "Banner of Murder",
+        "category": "magic",
+        "type": "magic_standard",
+        "pointsCost": 25,
+        "image": "",
+        "description": "This standard is steeped in the blood of sacrificial victims, its murderous aura instilling a thirst for death and carnage in those carrying it aloft.<br>A unit with the Banner of Murder gains the Armour Piercing rule."
+    },
+    {
+        "name": "Banner of Cold Blood (One use only)",
+        "category": "magic",
+        "type": "magic_standard",
+        "pointsCost": 15,
+        "image": "",
+        "description": "Soaked in the blood of slaughtered Lizardmen, the presence of the Banner of Cold Blood imbues those who carry it with cold-blooded discipline.<br>Announce that the unit is using the banner at the start of any player turn. For the duration of that turn, the unit containing the banner takes any Leadership tests on 3D6 and the Dark Elves player discards the highest D6 roll before comparing the score to the unit's Leadership value."
+    },
+    {
+        "name": "Rending Stars (Assassins only)",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "onlyFor": ["Dark Elf Assassin"],
+        "pointsCost": 30,
+        "image": "",
+        "repeatable": true,
+        "description": "These are a particular type of throwing star, with wickedly curved edges that tear through flesh and leave a deeply lacerated wound.<br>Maximum Range: 12\"; Strength: As user+1.<br>Rules: Thrown weapon; multiple shot x3."
+    },
+    {
+        "name": "Dance of Doom",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 30,
+        "image": "",
+        "repeatable": true,
+        "description": "The sinuous Dance of Doom can be used to dodge the fastest shot or blow.<br>The model has a 5+ ward save."
+    },
+    {
+        "name": "Touch of Death",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 30,
+        "image": "",
+        "repeatable": true,
+        "description": "The Adepts of Death school the servants of Khaine to learn the points on a body that kill instantly.<br>The model has killing blow."
+    },
+    {
+        "name": "Rune of Khaine",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 25,
+        "image": "",
+        "repeatable": true,
+        "description": "The Hag Queens burn the rune of the Lord of Murder upon the brow of the most zealous of killers.<br>The model has +D3 Attacks (rolled just before making the model's attacks)."
+    },
+    {
+        "name": "Witchbrew (Hags only)",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "onlyFor": ["Hag", "Death Hag"],
+        "pointsCost": 25,
+        "image": "",
+        "repeatable": true,
+        "description": "Witchbrew is distilled from blood by the Hag Queens. It drives Witch Elves into such an ecstasy of destruction that they will fight on against impossible odds.<br>Witchbrew affects the Hag's unit for the entire battle. Enemy units cannot claim combat resolution bonuses for outnumbering, flank or rear attacks, or higher ground if they are only fighting a unit affected by Witchbrew."
+    },
+    {
+        "name": "Hand of Khaine",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 15,
+        "image": "",
+        "repeatable": true,
+        "description": "Tracing a complex pattern in the air, the Dark Elf entrances his victim, leaving him vulnerable and open to attack.<br>One model in base contact chosen by the Dark Elves player, or the model's opponent in a challenge, loses one Attack (to a minimum of 1). Against mounted models, the Dark Elves player must choose either the mount or the rider. If the model has special types of attack (a Giant, for example) the Hand of Khaine has no effect. Models that are Immune to Psychology are unaffected by the Hand of Khaine."
+    },
+    {
+        "name": "Cry of War",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 10,
+        "image": "",
+        "repeatable": true,
+        "description": "By screeching one of the seventeen secret names of Khaine, the warrior freezes enemies with horror.<br>A unit charged by a warrior with a Cry of War must pass a Leadership test or reduce their Weapon Skill by 1 (to a minimum of 1) for that Close Combat."
+    },
+    {
+        "name": "Venom Sword (Magic weapon)",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 75,
+        "image": "",
+        "description": "The Venom Sword is quenched in the poison of a thousand malicious serpents. When it strikes, mystical poisons flow into the veins of its victim.<br>Magic weapon. Any model that takes a wound from the Venom Sword (after saves, etc) must roll equal to or under its Toughness on 2D6 or automatically lose all remaining wounds."
+    },
+    {
+        "name": "Cloak of Twilight (Enchanted item, Assassins only)",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "onlyFor": ["Dark Elf Assassin"],
+        "pointsCost": 20,
+        "image": "",
+        "description": "Bound spell, power level 3.<br>Imbued with the darkness of a moonless night, this cloak allows the wearer to move rapidly and unseen. The Cloak of Twilight contains the Steed of Shadows spell from the Lore of Shadows."
+    },
+    {
+        "name": "Manbane",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 25,
+        "image": "",
+        "repeatable": true,
+        "description": "Manbane is one of the most lethal venoms ever devised, causing even the tiniest wound to bleed openly and profusely.<br>A model with a weapon coated with Manbane always counts their Strength as one higher than their target's Toughness, unless their Strength would normally be more than this, up to a maximum of Strength 6. This means that they almost always wound opponents on a roll of 3+. This modified Strength is used to calculate armour save modifiers."
+    },
+    {
+        "name": "Black Lotus",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 20,
+        "image": "",
+        "repeatable": true,
+        "description": "Black Lotus has a terrifying effect on living flesh, driving victims delusional and insane.<br>The model may re-roll any dice that score a 1 when rolling to wound with a weapon coated with Black Lotus."
+    },
+    {
+        "name": "Dark Venom",
+        "category": "magic",
+        "type": "gifts_of_khaine",
+        "pointsCost": 10,
+        "image": "",
+        "repeatable": true,
+        "description": "A weapon treated with Dark Venom will cause a mortal wound if it merely scratches the skin, causing the poisoned victim to die in the most grotesque manner imaginable.<br>If a model with Dark Venom slays an enemy in a challenge, all wounds inflicted by the model in the challenge that round are doubled for the purposes of combat resolution scores (up to the overkill maximum)."
+    }
+]

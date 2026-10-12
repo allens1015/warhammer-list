@@ -1,0 +1,852 @@
+[
+  {
+    "name": "Lord Skrolk",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 470,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "repeatable": false
+  },
+  {
+    "name": "Thanquol & Boneripper",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 450,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "repeatable": false
+  },
+  {
+    "name": "Ikit Claw",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 395,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "repeatable": false
+  },
+  {
+    "name": "Throt the Unclean",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 225,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "repeatable": false
+  },
+  {
+    "name": "Queek Headtaker",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 215,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "repeatable": false
+  },
+  {
+    "name": "Vermin Lord",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 500,
+    "count": 1,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Warlord",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 90,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "mounts": [
+      {
+        "name": "Warlord (on Foot)",
+        "pointsCost": 90
+      },
+      {
+        "name": "Warlord (on Rat-Ogre Bonebreaker)",
+        "pointsCost": 155
+      },
+      {
+        "name": "Warlord (on War-Litter)",
+        "pointsCost": 125
+      },
+      {
+        "name": "Warlord (on Great Pox Rat)",
+        "pointsCost": 120
+      }
+    ]
+  },
+  {
+    "name": "Grey Seer",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 240,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "mounts": [
+      {
+        "name": "Grey Seer (on Foot)",
+        "pointsCost": 90
+      },
+      {
+        "name": "Grey Seer (on Screaming Bell)",
+        "pointsCost": 155,
+        "repeatable": false
+      }
+    ]
+  },
+  {
+    "name": "The Screaming Bell",
+    "category": "lord",
+    "type": "model",
+    "pointsCost": 200,
+    "count": 1,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Deathmaster Snikch",
+    "category": "hero",
+    "type": "model",
+    "pointsCost": 270,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "repeatable": false
+  },
+  {
+    "name": "Tretch Craventail",
+    "category": "hero",
+    "type": "model",
+    "pointsCost": 145,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "repeatable": false
+  },
+  {
+    "name": "Assassin",
+    "category": "hero",
+    "type": "model",
+    "pointsCost": 120,
+    "count": 1,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Warlock Engineer",
+    "category": "hero",
+    "type": "model",
+    "pointsCost": 15,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "choices": [
+      {
+        "name": "Warlock Engineer",
+        "pointsCost": 15
+      },
+      {
+        "name": "Warlock Engineer (level 1)",
+        "pointsCost": 65
+      },
+      {
+        "name": "Warlock Engineer (level 2)",
+        "pointsCost": 100
+      },
+      {
+        "name": "Warlock Engineer (Warplock-Augmented Weapon)",
+        "pointsCost": 60
+      }
+    ]
+  },
+  {
+    "name": "Chieftain",
+    "category": "hero",
+    "type": "model",
+    "pointsCost": 45,
+    "count": 1,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Plague Priest",
+    "category": "hero",
+    "type": "model",
+    "pointsCost": 100,
+    "count": 1,
+    "image": "",
+    "description": "",
+    "mounts": [
+      {
+        "name": "Plague Priest (on foot)",
+        "pointsCost": 100
+      },
+      {
+        "name": "Plague Priest (on Great Pox Rat)",
+        "pointsCost": 130
+      },
+      {
+        "name": "Plague Priest (on Plague Furnace)",
+        "pointsCost": 150,
+        "repeatable": false
+      }
+    ]
+  },
+  {
+    "name": "Clanrats",
+    "category": "core",
+    "type": "unit",
+    "pointsCost": 4,
+    "count": 10,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Weapon Teams (pick one)",
+    "category": "core",
+    "type": "unit",
+    "pointsCost": 0,
+    "count": 1,
+    "image": "",
+    "description": "Warpfire Thrower, Ratling Gun, Doom-Flayer, or Poisoned Wind Mortar"
+  },
+  {
+    "name": "Stormvermin",
+    "category": "core",
+    "type": "unit",
+    "pointsCost": 7,
+    "count": 10,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Skavenslaves",
+    "category": "core",
+    "type": "unit",
+    "pointsCost": 2,
+    "count": 10,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Night Runners",
+    "category": "core",
+    "type": "unit",
+    "pointsCost": 7,
+    "count": 5,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Giant Rats",
+    "category": "core",
+    "type": "unit",
+    "pointsCost": 3,
+    "count": 5,
+    "image": "",
+    "description": "",
+    "choices": [
+      {
+        "name": "Giant Rats",
+        "pointsCost": 35
+      },
+      {
+        "name": "Giant Rats (with Packmaster)",
+        "pointsCost": 43
+      },
+      {
+        "name": "Giant Rats (with Master Moulder)",
+        "pointsCost": 68
+      },
+      {
+        "name": "Giant Rats (with Skweel Gnawtooth)",
+        "pointsCost": 143,
+        "repeatable": false
+      }
+    ]
+  },
+  {
+    "name": "Rat Swarm",
+    "category": "core",
+    "type": "unit",
+    "pointsCost": 25,
+    "count": 2,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Gutter Runners",
+    "category": "special",
+    "type": "unit",
+    "pointsCost": 12,
+    "count": 5,
+    "image": "",
+    "description": "",
+    "choices": [
+      {
+        "name": "Gutter Runners",
+        "pointsCost": 60
+      },
+      {
+        "name": "Gutter Runners (with Warp-grinder)",
+        "pointsCost": 120
+      }
+    ]
+  },
+  {
+    "name": "Rat Ogres",
+    "category": "special",
+    "type": "unit",
+    "pointsCost": 40,
+    "count": 2,
+    "image": "",
+    "description": "",
+    "choices": [
+      {
+        "name": "Rat Ogres",
+        "pointsCost": 80
+      },
+      {
+        "name": "Rat Ogres (with Master Moulder)",
+        "pointsCost": 113
+      },
+      {
+        "name": "Rat Ogres (with Skweel Gnawtooth)",
+        "pointsCost": 188,
+        "repeatable": false
+      }
+    ]
+  },
+  {
+    "name": "Plague Monks",
+    "category": "special",
+    "type": "unit",
+    "pointsCost": 7,
+    "count": 5,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Plague Censer Bearers",
+    "category": "special",
+    "type": "unit",
+    "pointsCost": 18,
+    "count": 5,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Warplock Jezzails",
+    "category": "special",
+    "type": "unit",
+    "pointsCost": 20,
+    "count": 3,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Poisoned Wind Globadiers",
+    "category": "special",
+    "type": "unit",
+    "pointsCost": 10,
+    "count": 5,
+    "image": "",
+    "description": "",
+    "choices": [
+      {
+        "name": "Poisoned Wind Globadiers",
+        "pointsCost": 50
+      },
+      {
+        "name": "Poisoned Wind Globadiers (with Poisoned Wind Mortar)",
+        "pointsCost": 115
+      }
+    ]
+  },
+  {
+    "name": "Hell Pit Abomination",
+    "category": "rare",
+    "type": "model",
+    "pointsCost": 235,
+    "count": 1,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Doomwheel",
+    "category": "rare",
+    "type": "model",
+    "pointsCost": 150,
+    "count": 1,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Warp Lightning Cannon",
+    "category": "rare",
+    "type": "model",
+    "pointsCost": 90,
+    "count": 1,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Plagueclaw Catapult",
+    "category": "rare",
+    "type": "model",
+    "pointsCost": 100,
+    "count": 1,
+    "image": "",
+    "description": ""
+  },
+  {
+    "name": "Sword of Striking",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 15,
+    "image": "",
+    "description": "Weapon; +1 to hit"
+  },
+  {
+    "name": "Sword of Battle",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 15,
+    "image": "",
+    "description": "Weapon; +1 Attack"
+  },
+  {
+    "name": "Sword of Might",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 15,
+    "image": "",
+    "description": "Weapon; +1 Strength"
+  },
+  {
+    "name": "Biting Blade",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 5,
+    "image": "",
+    "description": "Weapon; -1 armour save"
+  },
+  {
+    "name": "Enchanted Shield",
+    "category": "magic",
+    "type": "magic_armour",
+    "pointsCost": 15,
+    "image": "",
+    "description": "Armour; 5+ armour save"
+  },
+  {
+    "name": "Talisman of Protection",
+    "category": "magic",
+    "type": "talisman",
+    "pointsCost": 15,
+    "image": "",
+    "description": "Talisman; 6+ ward save"
+  },
+  {
+    "name": "Staff of Sorcery",
+    "category": "magic",
+    "type": "arcane_item",
+    "pointsCost": 35,
+    "image": "",
+    "description": "Arcane; +1 to dispel"
+  },
+  {
+    "name": "Dispel Scroll",
+    "category": "magic",
+    "type": "arcane_item",
+    "pointsCost": 25,
+    "image": "",
+    "repeatable": true,
+    "description": "Arcane; one use only; Automatically dispel an enemy spell."
+  },
+  {
+    "name": "Power Stone",
+    "category": "magic",
+    "type": "arcane_item",
+    "pointsCost": 20,
+    "image": "",
+    "repeatable": true,
+    "description": "Arcane; one use only; +2 dice to cast a spell."
+  },
+  {
+    "name": "War Banner",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 25,
+    "image": "",
+    "description": "Banner; +1 combat resolution"
+  },
+  {
+    "name": "The Fellblade",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 100,
+    "image": "",
+    "description": "This is the sword of swords that was created by the Skaven to destroy the greatest Necromancer to ever walk the world. Raw warpstone was smelted into stolen gromril. Incantations of doom were heaped upon the cursed blade. Death itself was bound to its cutting edge and any with eldritch sight can see the aura of power and ruin that surrounds the wicked creation. No foe can stand before it and even the wielder must succumb to its baleful effects.<br>This foul sword gives the bearer Strength 10 and successful ward saves must be re-rolled. Any unsaved wounds caused by the Fellblade are multiplied into D6 wounds. Roll a D6 at the end of each of the wielder's turns; on a 3+ there is no effect. On a roll of 1-2 the wielder suffers 1 wound with no armour save allowed."
+  },
+  {
+    "name": "Warpforged Blade",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 50,
+    "image": "",
+    "description": "Warpstone powder mixed with steel during the forging process creates a weapon of wicked cutting prowess.<br>Armour saves cannot be taken against hits from a Warpforged Blade."
+  },
+  {
+    "name": "Warlock-Augmented Weapon",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 45,
+    "image": "",
+    "description": "This blade is attached to a warp generator that channels crackling energy along the weapon.<br>A Warlock Weapon adds +1 Strength and +1 Attack to any model so equipped."
+  },
+  {
+    "name": "Blade of Corruption",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 35,
+    "image": "",
+    "description": "This sword has been left for 13 days in the dreaded Cauldron of One Thousand Poxes.<br>The wielder of this sword is granted +1 Strength to all Attacks made in close combat. Any unsaved wound inflicted by the Blade of Corruption is multiplied to 2 wounds. In addition, if the wielder makes a To Hit roll that has two or more rolls of 1, the wielder immediately suffers a wound that is multiplied to 2 wounds. Other Attacks are carried out as normal."
+  },
+  {
+    "name": "Weeping Blade",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 30,
+    "image": "",
+    "description": "This weapon weeps a corrosive venom, that can melt through armour to help deliver the poisoned point.<br>A Weeping Blade has the Armour Piercing special rule. Each unsaved wound is multiplied to D3 wounds."
+  },
+  {
+    "name": "Dwarfbane",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 25,
+    "image": "",
+    "description": "Many weapons have been forged during the wars to wrest the Worlds Edge Mountains from the Dwarfs. Each is cruelly barbed and deadly.<br>The wielder of this blade is granted +1 Strength to all attacks made in close combat. Additionally against Dwarfs, all hits are Armour Piercing, and the user re-rolls all failed To Wound rolls."
+  },
+  {
+    "name": "Blade of Nurglitch",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 10,
+    "image": "",
+    "description": "Blessed by the special ointments of the Plaguelords, these blades are filth-encrusted. Even a scratch from such a rusty weapon can turn into instant infection.<br>Enemy models lose 1 point of Toughness from their profile for each unsaved wound they suffer from this blade. Any model reduced to Toughness 0 is removed as a casualty."
+  },
+  {
+    "name": "Warpstone Armour",
+    "category": "magic",
+    "type": "magic_armour",
+    "pointsCost": 30,
+    "image": "",
+    "description": "Wrought in the great warpforges underneath Skavenblight, this armour radiates an evil aura.<br>Warpstone Armour gives its wearer a 4+ armour save. For each successful armour save made by the bearer in close combat, the armour immediately inflicts a Strength 4 hit against the model that struck the blow. Any casualties caused will count towards combat resolution. Warpstone Armour can be worn by Clan Skyre Warlock Engineers."
+  },
+  {
+    "name": "World's Edge Armour",
+    "category": "magic",
+    "type": "magic_armour",
+    "pointsCost": 25,
+    "image": "",
+    "description": "Many suits of Dwarf-forged gromril have fallen into the clutches of the Skaven. These mastercrafted pieces of plate are often recrafted to make a patchwork protection with other pieces of scavenged armour.<br>The armour gives its wearer a 4+ armour save. The first time the wearer is wounded by a Strength high enough to completely cancel his armour save, or is not permitted an armour save for any reason, the wound is discounted, but the armour is completely destroyed."
+  },
+  {
+    "name": "Shield of Distraction",
+    "category": "magic",
+    "type": "magic_armour",
+    "pointsCost": 15,
+    "image": "",
+    "description": "Grimy and ill-kept, this shield bears tainted hides, grisly trophies, or runes that are painful to look upon.<br>Any models in base contact wishing to strike the bearer of this shield suffer -1 Attack, to a minimum of 1."
+  },
+  {
+    "name": "Foul Pendant",
+    "category": "magic",
+    "type": "talisman",
+    "pointsCost": 30,
+    "image": "",
+    "description": "These take many forms – ratskull tokens, raw chunks of warpstone, or items bearing Skaven runes of power.<br>This wicked token of the Horned Rat's power confers a 5+ ward save upon the bearer."
+  },
+  {
+    "name": "Shadow Magnet Trinket",
+    "category": "magic",
+    "type": "talisman",
+    "pointsCost": 30,
+    "image": "",
+    "description": "Some warpstone-contaminated veins of ore develop the strange property of absorbing light, thus a radius of shadowy darkness forms around the metal.<br>Shooting attacks at the bearer of a Shadow Magnet Trinket and any unit he has joined suffer a -1 To Hit penalty in addition to any normal modifiers due to the cloying presence of unnatural darkness."
+  },
+  {
+    "name": "Rival Hide Talisman",
+    "category": "magic",
+    "type": "talisman",
+    "pointsCost": 15,
+    "image": "",
+    "description": "Wearing the stitched together hides of enemies slain through treachery is believed to attract the favour of the Great Horned Rat. It also smells like victory.<br>One use only. A Skaven model wearing a Rival Hide Talisman can make a single enemy model in base contact re-roll all its successful To Hit dice rolls."
+  },
+  {
+    "name": "Warpstorm Scroll",
+    "category": "magic",
+    "type": "arcane",
+    "pointsCost": 50,
+    "image": "",
+    "description": "As the words of this scroll are read aloud, the sky darkens and lightning splits the skies.<br>Bound Spell (Power Level 5). One use only. When this scroll is read all flying units within 24\" of the caster suffer D6 Strength 6 hits, distributed as per shooting."
+  },
+  {
+    "name": "Warp-Energy Condenser",
+    "category": "magic",
+    "type": "arcane",
+    "pointsCost": 20,
+    "image": "",
+    "description": "This rune-inscribed power pack is covered with copper coil wiring, flywheels, and enchanted mechanisms to draw extra energy from the fickle Winds of Magic.<br>During each friendly Magic phase a Grey Seer or Warlock Engineer with a Warp-Energy Condenser can, on a D6 roll of 5+, generate an extra power dice. Additionally, the device is particularly adept at aiding a sorcerer in casting Warp Lightning. While wearing a Warp-Energy Condenser a caster does not D6 but D6+2 hits when casting Warp Lightning. Rolls of 1, however, do not gain the +2 bonus."
+  },
+  {
+    "name": "Scrying Stone",
+    "category": "magic",
+    "type": "arcane",
+    "pointsCost": 15,
+    "image": "",
+    "description": "An orb made of the polished gallstones from the dreaded Blindwyrm of the underworld is said to be able to glimpse the future. At least on occasion, it seems to be true!<br>One use only. The bearer of this mystical ball gains a 3+ ward save against the first wound suffered. If the wound is saved because of the ward save of the Scrying Ball, the bearer will be subject to Stupidity in the following friendly turn as he awaits further helpful instructions from the mysterious globe."
+  },
+  {
+    "name": "Warpstone Tokens",
+    "category": "magic",
+    "type": "arcane",
+    "pointsCost": 15,
+    "image": "",
+    "description": "These pieces of refined warpstone are consumed by power-hungry Grey Seers or Warlock Engineers to aid their spellcasting. This is dangerous, but the quick road to power is an irresistible pull for any Skaven.<br>Multiple Grey Seers and Warlock Engineers may purchase as many Warpstone Tokens as are allowed within the limit of points they are able to spend on magic items. Warpstone Tokens do not count against the total Arcane items a model is allowed to bear.<br>A Grey Seer or Clan Skyre Warlock may choose to eat some warpstone to boost his powers. Before casting a spell announce which model is eating Warpstone Tokens. For each token consumed, a Wizard can add a single dice to his casting effort. These dice are added to the normal power dice, although this does allow users to roll more dice than is normally allowed by their level. A spell may be cast entirely with warpstone.<br>For any of the warpstone generated dice that rolls a one the Wizard suffers a wound with no armour saves allowed. The results of miscasts or irresistible force apply as normal. When using both normal power dice and Warpstone Token generated dice it is a good idea to roll separately or use dice of a different colour (green-tinged ones work best!)."
+  },
+  {
+    "name": "Skavenbrew",
+    "category": "magic",
+    "type": "enchanted_item",
+    "pointsCost": 50,
+    "image": "",
+    "description": "This concoction is made of warpstone and the blood of many creatures.<br>One use only. A character carrying Skavenbrew can force any unit of Clanrats or Stormvermin in base contact to guzzle the vile liquid. Champions are affected but no character models would be so unwise as to drink the potion.<br>Roll a D6 after the brew is consumed: 1 – Gone Bad. The unit takes D6 Strength 3 automatic hits with no armour save. The Skavenbrew has no additional effect. 2-3 – Inspired Hatred. The unit now has Hatred of all enemies. 4-5 – Frenzied. The unit is now subject to Frenzy. 6 – Rabid. The unit's metabolism is driven hyperactive, ramping up to a feverish pitch. The unit is subject to Frenzy, but instead of adding +1 Attacks, add +2 Attacks. In each following friendly Compulsory Move the unit will take D6 automatic wounds as some of the ratmen collapse, hearts or brains bursting with fury."
+  },
+  {
+    "name": "Skalm",
+    "category": "magic",
+    "type": "enchanted_item",
+    "pointsCost": 30,
+    "image": "",
+    "description": "This foul-smelling substance is smeared on wounds to unnaturally accelerate the healing process. Enough of the substance is even rumoured to prolong a Skaven's life – perhaps explaining the unnatural longevity of the current members of the Council of Thirteen.<br>One use only. At the beginning of any phase (friend or foe's) announce you are using Skalm. The bearer is instantly cured of any wounds suffered so far. Skalm is of no use to models that are already dead. Skalm can only be used by the bearer, sharing such a precious thing is not something a Skaven would contemplate."
+  },
+  {
+    "name": "Pipes of Piebald",
+    "category": "magic",
+    "type": "enchanted_item",
+    "pointsCost": 25,
+    "image": "",
+    "description": "When Warlock Engineer Skerrik Piebald attempted to build a death-ray he failed miserably, but instead succeeded in creating a helmet that allowed a minor form of mind control. Sometimes thrumming and hypnotising vibrations rise out of the pipes atop the odd device, mesmerising all within range.<br>In order to charge the bearer or any unit he has joined, an enemy unit must first pass a Ld test. If the Ld test is failed, treat the unit as if they had failed a charge."
+  },
+  {
+    "name": "Portents of Verminous Doom",
+    "category": "magic",
+    "type": "enchanted_item",
+    "pointsCost": 20,
+    "image": "",
+    "description": "Portents of Doom take many forms, although most often they are backbanners festooned with the skulls of the enemy, clan symbols, and runes of the Horned Rat.<br>Any enemy unit in base contact with the model bearing Portents of Verminous Doom suffers a -1 penalty to its Leadership for as long as they remain in contact."
+  },
+  {
+    "name": "Warpstone Stars",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 50,
+    "image": "",
+    "description": "Clan Eshin Tools of War: These wickedly sharp throwing stars are coated with a deadly warp poison.<br>Warpstone Stars are a thrown weapon with the 3x Multiple Shots rule. Warpstone Stars are Strength 5 and each unsaved wound multiplies into D3 wounds."
+  },
+  {
+    "name": "Infernal Bomb",
+    "category": "magic",
+    "type": "enchanted_item",
+    "pointsCost": 30,
+    "image": "",
+    "description": "Clan Eshin Tools of War: An Infernal Bomb is an explosive device favoured by Clan Eshin for espionage jobs. These iron-clad devices use cogs and gears to delay a blast of hellish energy.<br>One use only. Except in a turn in which he charges, an Assassin can place an Infernal Bomb anywhere along his path during the Movement phase or, if in a unit, anywhere along the path the unit has travelled. A model can place an Infernal Bomb and march. Announce your intentions to drop off an Infernal Bomb and mark the spot (a coin will do). The model and/or unit that places the bomb must set the bomb and move away. Once placed, an Infernal Bomb cannot be moved.<br>The owning player can choose to explode an Infernal Bomb at any time except during the player turn in which it was placed. However, an Infernal Bomb that would explode with its template touching the model that placed the bomb or any member of his unit cannot be detonated. When triggered, an Infernal Bomb explodes on a D6 roll of 2+. On a roll of 1, the Infernal Bomb is a dud and does not explode. Place the large round template centred on the counter. Any model at the template's centre takes a single Strength 10 hit, causing D3 wounds. Any models touched by the template suffer a Strength 3 hit."
+  },
+  {
+    "name": "Smoke Bombs",
+    "category": "magic",
+    "type": "enchanted_item",
+    "pointsCost": 10,
+    "image": "",
+    "description": "Clan Eshin Tools of War: A high-ranking member of Clan Eshin is likely to carry smoke bombs for diversions. When smashed, a dark and almost sentient smoke curls out and attempts to force its way into the lungs of any nearby.<br>One use only. If a character equipped with Smoke Bombs is forced to flee he can choose to smash the bombs underfoot to slow the victors as they pursue. Before any dice are rolled announce the Smoke Bombs are being detonated. All pursuing units in the combat must roll 1D6 less than normal."
+  },
+  {
+    "name": "Brass Orb",
+    "category": "magic",
+    "type": "enchanted_item",
+    "pointsCost": 50,
+    "image": "",
+    "description": "Clan Skyre Gear of War: A fist-sized metal orb made of interlinking whirling cogs, the Brass Orb is a dangerous device capable of opening a crack in the plane of reality, sucking those in its blast vicinity into the twisting Realm of Chaos.<br>One use only. In the Shooting phase the user can throw the orb. Place the small round template with its centre anywhere within 8\" of the character. Scatter the template as you would for a stone thrower shot. Models touched by the template must take an Initiative test or be destroyed, with no saves (of any kind) allowed. Remember that a 6 is always a failure. \"Look Out Sir!\" works as normal. If a misfire is rolled, centre the template on the model throwing the globe."
+  },
+  {
+    "name": "Doomrocket",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 30,
+    "image": "",
+    "description": "Clan Skyre Gear of War: Built with secrets stolen from the mysterious east, the Warlock Engineers still seek to improve the propulsion, steering and payload of these devastating weapons.<br>One use only. To fire the Doomrocket the owning player must nominate a direction and the number of dice he intends to roll for range. He can choose between 4 and 10 dice. The rocket will travel a number of inches equal to the total of the dice rolled and this determines where the large round template is placed. Any model touched by the template suffers a Strength 5 hit from the resulting explosion.<br>If three or more rolls of 1 occur during the firing, the rocket has gone off course. Roll on the Doomrocket Misfire Chart."
+  },
+  {
+    "name": "Death Globe",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 25,
+    "image": "",
+    "description": "Clan Skyre Gear of War: This is a poisoned wind globe of an even more potent variety, able to release great volumes of deadly gas.<br>One use only. A character equipped with such a weapon can throw it in any Shooting phase. The Death Globe is thrown just as the Brass Orb (see above). All models touched by the template suffer a wound on the result of 4+, with no armour save allowed."
+  },
+  {
+    "name": "Warlock Optics",
+    "category": "magic",
+    "type": "enchanted_item",
+    "pointsCost": 20,
+    "image": "",
+    "description": "Clan Skyre Gear of War: This warp-enhanced seeing device allows a Warlock Engineer to focus on a foe clearly, even those partially hidden in cover.<br>A Warlock Engineer equipped with Warlock Optics adds +1 to his Ballistic Skill. Additionally, a model so equipped can see partially through objects and so suffers no penalty for shooting at targets in cover."
+  },
+  {
+    "name": "Warp Scroll",
+    "category": "magic",
+    "type": "arcane",
+    "pointsCost": 35,
+    "image": "",
+    "description": "Clan Pestilens Befouled Items: Plague Priests going to war often bring along copied magical script from the great Liber Bubonicus. It has been written in warpstone ink on living hides.<br>One use only. Bound Spell (Power level 5). The spell has a range of 24\" and can be cast on any unit visible to the bearer. The spell inflicts one Strength 2 hit on every model in the unit, with no armour saves allowed."
+  },
+  {
+    "name": "Plague Banner",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 30,
+    "image": "",
+    "description": "Clan Pestilens Befouled Items: This foul, dripping and disease-ridden banner invigorates the Plague Monks to a new rabid ferocity.<br>One use only. Once per game in any Close Combat phase the Plague Banner may be activated. For the remainder of the phase all Plague Monk models in the unit may re-roll failed To Hit rolls and failed To Wound rolls."
+  },
+  {
+    "name": "Shock-Prod",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 25,
+    "image": "",
+    "description": "Clan Moulder Beast-Prods: This wickedly barbed prod carries a charge that packs a punch powerful enough to get the attention of even a rampaging Rat Ogre.<br>This weapon requires two hands to wield and ignores armour saves."
+  },
+  {
+    "name": "Electro-Whip",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 15,
+    "image": "",
+    "description": "Clan Moulder Beast-Prods: When cracked, this whip discharges a wicked spark of bright green electricity.<br>This weapon follows the rules for whips (see page 53) but confers D3 Attacks instead of the normal 1 when in base contact and from the rear ranks. Roll to determine the number of Attacks each combat."
+  },
+  {
+    "name": "Sacred Banner of the Horned Rat",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 70,
+    "image": "",
+    "description": "Rendered in pigments distilled from blood and warpstone, this hide banner has become a tapestry of dread and evil. The runes seem to twist and move so that it can be read, in any language – 'Gaze into the eyes of the Great Horned Rat and despair'.<br>All enemy units within 12\" of this banner suffer a -1 penalty to their Leadership and the owning player can make enemy units in base contact with the bearer of this banner re-roll any successful Leadership tests."
+  },
+  {
+    "name": "Storm Banner",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 50,
+    "image": "",
+    "description": "This ancient banner has the power to wrack the sky with storms, tearing the heavens apart with its fury.<br>The banner can be activated at the beginning of any player's turn. No flying movement is allowed across the entire battlefield and missile fire is at -2 to hit. All non-magical missile attacks that don't use BS to hit their target need to roll a 4+ on a D6 before they can fire. Roll a D6 at the end of each following player turn – the effects of the banner will end on a D6 roll of 4+."
+  },
+  {
+    "name": "Grand Banner of Clan Superiority",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 30,
+    "image": "",
+    "description": "These banners take as many forms as there are Warlord clans. Some are colossal totem-like trophy racks of enemy skulls, others rune-etched hide, or ragged shrouds magically emblazoned with clan signs.<br>In any combat in which a unit bearing a Grand Banner of Clan Superiority has more ranks than its opponents, the banner will add not 1 as per a normal banner, but instead a total of D3 to its bearer's combat resolution. Roll at the end of each combat."
+  },
+  {
+    "name": "Shroud of Dripping Death",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 30,
+    "image": "",
+    "description": "This horrid banner seems little more than a rag on a totem pole, yet closer inspection reveals foul stains that drip and splash as the bearer moves. The whole of the vile hide throbs, oozing a greenish tinted fluid.<br>All enemy models in base contact with the bearer of this banner take a single Strength 3 hits with no armour save at the start of each and every Close Combat phase. Additionally, should the unit bearing the Shroud of Dripping Death break from combat, any unit that dares to pursue it will immediately suffer D6+2 Strength 3 hits with no armour saves."
+  },
+  {
+    "name": "Banner of the Under-Empire",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 25,
+    "image": "",
+    "description": "A brown tide of rats scurries along with the unit bearing this unholy icon of the Great Horned Rat.<br>All units in base contact with the unit bearing this banner suffer 2D6 Strength 2 automatic hits at the start of each and every Close Combat phase. All hits are distributed as per Shooting."
+  },
+  {
+    "name": "Dwarf-Hide Banner",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 15,
+    "image": "",
+    "description": "An affront to the eyes (and noses) of any Dwarf. They are made from the Dwarf-skin soaked in warp-infused urine decorated with scalped beards.<br>The unit carrying this banner gains Hatred of Dwarfs and likewise will be subject to all Dwarfs gaining Hatred against them."
+  },
+  {
+    "name": "Banner of Verminous Scurrying",
+    "category": "magic",
+    "type": "magic_standard",
+    "pointsCost": 10,
+    "image": "",
+    "description": "Rituals of skittering urgency allow this banner to deliver a surge of energy to the unit carrying it.<br>Once per battle, at the start of any friendly turn except the first, the banner can be activated. If the unit carrying the banner can march, they can do so at triple speed. Such a rapid expenditure of energy has a cost, as after marching the unit suffers 2D6 Strength 3 hits (no armour saves allowed), distributed as per shooting."
+  },
+  {
+    "name": "Warpmusket (Scavenged)",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 15,
+    "image": "",
+    "repeatable": true,
+    "description": "A warpmusket is a move or fire weapon that has a range of 24\". Strength 5. A warpmusket has Armour Piercing, uses Unstable Ammunition (see page 65), and is a Warpstone Weapon."
+  },
+  {
+    "name": "Poisoned Attacks (Scavenged)",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 15,
+    "image": "",
+    "repeatable": true,
+    "description": "All close combat attacks made by the model count as Poisoned Attacks. This will affect a tail weapon, but not any other magical weapons or the mount."
+  },
+  {
+    "name": "Tail Weapon (Scavenged)",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 5,
+    "image": "",
+    "repeatable": true,
+    "description": "With this additional blade, a Skaven character can make an additional hand weapon attack. This includes models with an additional hand weapon or no magical weapons — the tail weapon itself has no magical properties."
+  },
+  {
+    "name": "Warplock Pistol (Scavenged)",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 8,
+    "image": "",
+    "repeatable": true,
+    "description": "A warplock pistol follows the rules for pistols except that it has a range of 10\". A warplock pistol is a Warpstone Weapon."
+  },
+  {
+    "name": "Rat Hound Bodyguard (Scavenged)",
+    "category": "magic",
+    "type": "magic_weapon",
+    "pointsCost": 5,
+    "image": "",
+    "repeatable": true,
+    "description": "A model with a Rat Hound Bodyguard upgrade gains modified stats, although their venomous instincts means they might still attack their master if the handler is not present."
+  }
+]
