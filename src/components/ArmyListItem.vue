@@ -1,11 +1,32 @@
 <script setup>
 import { Info, X } from 'lucide-vue-next'
+import { computed } from 'vue'
+
 const props = defineProps({ unit: Object })
-const emit = defineEmits(['resize', 'toggle-command', 'toggle-option', 'select-item', 'remove-item', 'remove'])
+const emit = defineEmits(['resize', 'toggle-command', 'toggle-option', 'select-item', 'remove-item', 'set-general', 'remove'])
+
+const cost = o => `${o.pointsCost ? `+${o.pointsCost}` : 'free'}${o.perModel ? ' / model' : ''}`
+
+// Pick-one groups (mounts, weapons) render as a dropdown, the rest as chips
+const looseOptions = computed(() => props.unit.options.filter(o => !o.group))
+const optionGroups = computed(() => {
+  const groups = new Map()
+  for (const o of props.unit.options.filter(o => o.group)) {
+    if (!groups.has(o.group)) groups.set(o.group, { label: o.group, required: o.required, options: [] })
+    groups.get(o.group).options.push(o)
+  }
+  return Array.from(groups.values())
+})
+
+// toggle-option deselects the current pick or swaps to the new one
+function pickOption(group, event) {
+  const key = event.target.value || group.options.find(o => o.selected)?.key
+  if (key) emit('toggle-option', props.unit.id, key)
+}
 
 // A single slot lists every item so the current one shows as the value;
 // other slots show held items as chips and list only what can be added.
-const addable = slot => slot.single ? slot.choices : slot.choices.filter(i => !i.selected)
+const addable = slot => slot.single ? slot.choices : slot.choices.filter(i => i.addable)
 
 function groupChoices(slot) {
   const groups = new Map()
@@ -57,6 +78,10 @@ const chipClass = selected => [
           v-html="unit.description"
         />
       </span>
+      <label v-if="unit.canBeGeneral" class="flex items-center gap-1 text-xs font-normal text-muted-foreground">
+        <input type="checkbox" :checked="unit.isGeneral" @change="emit('set-general', unit.id)" />
+        General
+      </label>
       <button
         class="p-1 opacity-0 group-hover:opacity-100 hover:bg-neutral-200 rounded transition-all shrink-0"
         @click="emit('remove', unit.id)"
@@ -65,7 +90,11 @@ const chipClass = selected => [
       </button>
     </div>
 
-    <div v-if="unit.command.length || unit.options.length" class="flex flex-wrap gap-1.5">
+    <p v-if="unit.generalWarning" class="text-xs text-destructive">
+      {{ unit.generalWarning }}
+    </p>
+
+    <div v-if="unit.command.length || unit.options.length" class="flex flex-wrap items-center gap-1.5">
       <button
         v-for="c in unit.command"
         :key="c.key"
@@ -76,22 +105,35 @@ const chipClass = selected => [
       >
         {{ c.label }} +{{ c.pointsCost }}
       </button>
+      <select
+        v-for="group in optionGroups"
+        :key="group.label"
+        :value="group.options.find(o => o.selected)?.key ?? ''"
+        :aria-label="`${unit.name} ${group.label}`"
+        class="px-2 py-0.5 rounded-md border border-border bg-white text-foreground text-xs focus:outline-none focus:ring-2 focus:ring-ring"
+        @change="pickOption(group, $event)"
+      >
+        <option v-if="!group.required" value="">{{ group.label }}</option>
+        <option v-for="o in group.options" :key="o.key" :value="o.key" :disabled="o.locked">
+          {{ o.label }} {{ cost(o) }}
+        </option>
+      </select>
       <button
-        v-for="o in unit.options"
+        v-for="o in looseOptions"
         :key="o.key"
         :class="chipClass(o.selected)"
         :aria-pressed="o.selected"
         :disabled="o.locked"
         @click="emit('toggle-option', unit.id, o.key)"
       >
-        {{ o.label }} {{ o.pointsCost ? `+${o.pointsCost}` : 'free' }}{{ o.perModel ? ' / model' : '' }}
+        {{ o.label }} {{ cost(o) }}
       </button>
     </div>
 
     <div v-for="slot in unit.slots" :key="slot.key" class="flex flex-wrap items-center gap-1.5">
       <template v-if="!slot.single">
         <span class="text-xs text-muted-foreground">
-          {{ slot.label }} ({{ slot.spent }} / {{ slot.allowance }} pts)
+          {{ slot.label }} ({{ slot.allowance === null ? slot.spent : `${slot.spent} / ${slot.allowance}` }} pts)
         </span>
         <template v-for="i in slot.choices" :key="i.name">
           <button
@@ -100,7 +142,7 @@ const chipClass = selected => [
             :aria-label="`Remove ${i.name}`"
             @click="emit('remove-item', unit.id, slot.key, i.name)"
           >
-            {{ i.name }} +{{ i.pointsCost }}
+            {{ i.name }}{{ i.qty > 1 ? ` ×${i.qty}` : '' }} +{{ i.pointsCost * i.qty }}
             <X class="w-3 h-3" />
             <span
               v-if="i.description"
@@ -117,7 +159,7 @@ const chipClass = selected => [
         class="px-2 py-0.5 rounded-md border border-border bg-white text-foreground text-xs focus:outline-none focus:ring-2 focus:ring-ring"
         @change="pickItem(slot, $event)"
       >
-        <option value="">{{ slot.single ? `${slot.label} (up to ${slot.allowance} pts)` : 'Add…' }}</option>
+        <option value="">{{ !slot.single ? 'Add…' : slot.allowance === null ? slot.label : `${slot.label} (up to ${slot.allowance} pts)` }}</option>
         <template v-if="slot.grouped">
           <optgroup v-for="group in groupChoices(slot)" :key="group.label" :label="group.label">
             <option v-for="i in group.choices" :key="i.name" :value="i.name" :disabled="i.disabled">

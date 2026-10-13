@@ -9,7 +9,7 @@ const props = defineProps({
   overCap: Boolean,
 })
 
-const emit = defineEmits(['add', 'resize', 'toggle-command', 'toggle-option', 'select-item', 'remove-item', 'remove'])
+const emit = defineEmits(['add', 'resize', 'toggle-command', 'toggle-option', 'select-item', 'remove-item', 'set-general', 'remove'])
 
 const openCategory = ref(null)
 const copied = ref(false)
@@ -107,6 +107,7 @@ function copyToClipboard() {
           @toggle-option="(id, key) => emit('toggle-option', id, key)"
           @select-item="(id, slot, name) => emit('select-item', id, slot, name)"
           @remove-item="(id, slot, name) => emit('remove-item', id, slot, name)"
+          @set-general="emit('set-general', $event)"
           @remove="emit('remove', $event)"
         />
       </ul>

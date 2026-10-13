@@ -5,30 +5,14 @@
         "type": "model",
         "pointsCost": 600,
         "count": 1,
+        "leadership": 10,
         "image": "",
         "description": "",
-        "slotsUsed": {
-            "lord": 1,
-            "hero": 1
-        },
         "repeatable": false,
-        "mounts": [
-            {
-                "name": "Malekith, the Witch King (on Foot)",
-                "pointsCost": 600
-            },
-            {
-                "name": "Malekith, the Witch King (on Cold One)",
-                "pointsCost": 630
-            },
-            {
-                "name": "Malekith, the Witch King (on Black Dragon)",
-                "pointsCost": 920
-            },
-            {
-                "name": "Malekith, the Witch King (on Black Chariot with one other crewman)",
-                "pointsCost": 710
-            }
+        "options": [
+            { "name": "Cold One", "pointsCost": 30, "group": "Mount" },
+            { "name": "Black Dragon", "pointsCost": 320, "group": "Mount", "extraHeroSlots": 1 },
+            { "name": "The Black Chariot (with one other crewman)", "pointsCost": 110, "group": "Mount" }
         ]
     },
     {
@@ -37,18 +21,14 @@
         "type": "model",
         "pointsCost": 455,
         "count": 1,
+        "leadership": 10,
         "image": "",
         "description": "",
         "repeatable": false,
-        "choices": [
-            {
-                "name": "Morathi, the Hag Sorceress (with Heartrender)",
-                "pointsCost": 500
-            },
-            {
-                "name": "Morathi, the Hag Sorceress (with Darksword)",
-                "pointsCost": 480
-            }
+        "magicItems": { "types": ["arcane_item", "enchanted_item"] },
+        "options": [
+            { "name": "Heartrender", "pointsCost": 45, "group": "Magic Weapon", "required": true },
+            { "name": "Darksword", "pointsCost": 25, "group": "Magic Weapon", "required": true }
         ]
     },
     {
@@ -57,18 +37,13 @@
         "type": "model",
         "pointsCost": 350,
         "count": 1,
+        "leadership": 10,
         "image": "",
         "description": "",
         "repeatable": false,
-        "mounts": [
-            {
-                "name": "Crone Hellebron, the Hag Queen (on Foot)",
-                "pointsCost": 350
-            },
-            {
-                "name": "Crone Hellebron, the Hag Queen (on Manticore)",
-                "pointsCost": 550
-            }
+        "generalMakesCore": ["Witch Elves"],
+        "options": [
+            { "name": "Manticore", "pointsCost": 200, "group": "Mount" }
         ]
     },
     {
@@ -77,41 +52,28 @@
         "type": "model",
         "pointsCost": 140,
         "count": 1,
+        "leadership": 10,
         "image": "",
         "description": "",
-        "mounts": [
-            {
-                "name": "Dreadlord (on Foot)",
-                "pointsCost": 140
-            },
-            {
-                "name": "Dreadlord (on Dark Steed)",
-                "pointsCost": 158
-            },
-            {
-                "name": "Dreadlord (on Cold One)",
-                "pointsCost": 170
-            },
-            {
-                "name": "Dreadlord (on Dark Pegasus)",
-                "pointsCost": 190
-            },
-            {
-                "name": "Dreadlord (on Manticore)",
-                "pointsCost": 340
-            },
-            {
-                "name": "Dreadlord (on Black Dragon)",
-                "pointsCost": 360,
-                "slotsUsed": {
-                    "lord": 1,
-                    "hero": 1
-                }
-            },
-            {
-                "name": "Dreadlord (on Cold One Chariot, replacing one crew)",
-                "pointsCost": 230
-            }
+        "magicItems": 100,
+        "options": [
+            { "name": "Lance", "pointsCost": 6, "group": "Close Combat Weapon" },
+            { "name": "Great weapon", "pointsCost": 6, "group": "Close Combat Weapon" },
+            { "name": "Halberd", "pointsCost": 6, "group": "Close Combat Weapon" },
+            { "name": "Additional hand weapon", "pointsCost": 6, "group": "Close Combat Weapon" },
+            { "name": "Repeater crossbow", "pointsCost": 10, "group": "Ranged Weapon" },
+            { "name": "Repeater handbow", "pointsCost": 8, "group": "Ranged Weapon" },
+            { "name": "Pair of repeater handbows", "pointsCost": 16, "group": "Ranged Weapon" },
+            { "name": "Light armour", "pointsCost": 3, "group": "Armour" },
+            { "name": "Heavy armour", "pointsCost": 6, "group": "Armour" },
+            { "name": "Shield", "pointsCost": 3 },
+            { "name": "Sea Dragon Cloak", "pointsCost": 6 },
+            { "name": "Dark Steed", "pointsCost": 18, "group": "Mount" },
+            { "name": "Cold One", "pointsCost": 30, "group": "Mount" },
+            { "name": "Dark Pegasus", "pointsCost": 50, "group": "Mount" },
+            { "name": "Manticore", "pointsCost": 200, "group": "Mount" },
+            { "name": "Black Dragon", "pointsCost": 320, "group": "Mount", "extraHeroSlots": 1 },
+            { "name": "Cold One chariot (replacing one crew)", "pointsCost": 90, "group": "Mount" }
         ]
     },
     {
@@ -120,33 +82,18 @@
         "type": "model",
         "pointsCost": 225,
         "count": 1,
+        "leadership": 9,
         "image": "",
         "description": "",
-        "mounts": [
-            {
-                "name": "Supreme Sorceress (on Foot)",
-                "pointsCost": 225
-            },
-            {
-                "name": "Supreme Sorceress (on Dark Steed)",
-                "pointsCost": 243
-            },
-            {
-                "name": "Supreme Sorceress (on Cold One)",
-                "pointsCost": 255
-            },
-            {
-                "name": "Supreme Sorceress (on Dark Pegasus)",
-                "pointsCost": 275
-            },
-            {
-                "name": "Supreme Sorceress (on Manticore)",
-                "pointsCost": 425
-            },
-            {
-                "name": "Supreme Sorceress (on Black Dragon)",
-                "pointsCost": 545
-            }
+        "wizard": true,
+        "magicItems": 100,
+        "options": [
+            { "name": "Level 4 Wizard", "pointsCost": 35 },
+            { "name": "Dark Steed", "pointsCost": 18, "group": "Mount" },
+            { "name": "Cold One", "pointsCost": 30, "group": "Mount" },
+            { "name": "Dark Pegasus", "pointsCost": 50, "group": "Mount" },
+            { "name": "Manticore", "pointsCost": 200, "group": "Mount" },
+            { "name": "Black Dragon", "pointsCost": 320, "group": "Mount", "extraHeroSlots": 1 }
         ]
     },
     {
@@ -155,6 +102,7 @@
         "type": "model",
         "pointsCost": 275,
         "count": 1,
+        "leadership": 9,
         "image": "",
         "description": "",
         "repeatable": false
@@ -165,8 +113,10 @@
         "type": "model",
         "pointsCost": 300,
         "count": 1,
+        "leadership": 10,
         "image": "",
         "description": "",
+        "canBeGeneral": false,
         "repeatable": false
     },
     {
@@ -175,6 +125,7 @@
         "type": "model",
         "pointsCost": 250,
         "count": 1,
+        "leadership": 9,
         "image": "",
         "description": "",
         "repeatable": false
@@ -185,25 +136,16 @@
         "type": "model",
         "pointsCost": 100,
         "count": 1,
+        "leadership": 8,
         "image": "",
         "description": "",
-        "mounts": [
-            {
-                "name": "Sorceress (on Foot)",
-                "pointsCost": 100
-            },
-            {
-                "name": "Sorceress (on Dark Steed)",
-                "pointsCost": 112
-            },
-            {
-                "name": "Sorceress (on Cold One)",
-                "pointsCost": 120
-            },
-            {
-                "name": "Sorceress (on Dark Pegasus)",
-                "pointsCost": 150
-            }
+        "wizard": true,
+        "magicItems": 50,
+        "options": [
+            { "name": "Level 2 Wizard", "pointsCost": 35 },
+            { "name": "Dark Steed", "pointsCost": 12, "group": "Mount" },
+            { "name": "Cold One", "pointsCost": 20, "group": "Mount" },
+            { "name": "Dark Pegasus", "pointsCost": 50, "group": "Mount" }
         ]
     },
     {
@@ -212,36 +154,29 @@
         "type": "model",
         "pointsCost": 80,
         "count": 1,
+        "leadership": 9,
         "image": "",
         "description": "",
-        "mounts": [
-            {
-                "name": "Master (on Foot)",
-                "pointsCost": 80
-            },
-            {
-                "name": "Master (on Dark Steed)",
-                "pointsCost": 92
-            },
-            {
-                "name": "Master (on Cold One)",
-                "pointsCost": 100
-            },
-            {
-                "name": "Master (on Dark Pegasus)",
-                "pointsCost": 130
-            },
-            {
-                "name": "Master (on Manticore)",
-                "pointsCost": 280,
-                "slotsUsed": {
-                    "hero": 2
-                }
-            },
-            {
-                "name": "Master (on Cold One Chariot, replacing one crew)",
-                "pointsCost": 170
-            }
+        "magicItems": 50,
+        "options": [
+            { "name": "Lance", "pointsCost": 4, "group": "Close Combat Weapon" },
+            { "name": "Great weapon", "pointsCost": 4, "group": "Close Combat Weapon" },
+            { "name": "Halberd", "pointsCost": 4, "group": "Close Combat Weapon" },
+            { "name": "Additional hand weapon", "pointsCost": 4, "group": "Close Combat Weapon" },
+            { "name": "Beastmaster's scourge", "pointsCost": 6, "group": "Close Combat Weapon" },
+            { "name": "Repeater crossbow", "pointsCost": 10, "group": "Ranged Weapon" },
+            { "name": "Repeater handbow", "pointsCost": 8, "group": "Ranged Weapon" },
+            { "name": "Pair of repeater handbows", "pointsCost": 16, "group": "Ranged Weapon" },
+            { "name": "Light armour", "pointsCost": 2, "group": "Armour" },
+            { "name": "Heavy armour", "pointsCost": 4, "group": "Armour" },
+            { "name": "Shield", "pointsCost": 2 },
+            { "name": "Sea Dragon Cloak", "pointsCost": 4 },
+            { "name": "Dark Steed", "pointsCost": 12, "group": "Mount" },
+            { "name": "Cold One", "pointsCost": 20, "group": "Mount" },
+            { "name": "Dark Pegasus", "pointsCost": 50, "group": "Mount" },
+            { "name": "Manticore", "pointsCost": 200, "group": "Mount", "extraHeroSlots": 1 },
+            { "name": "Cold One chariot (replacing one crew)", "pointsCost": 90, "group": "Mount" },
+            { "name": "Battle Standard Bearer", "pointsCost": 25, "onePerArmy": true, "battleStandard": true }
         ]
     },
     {
@@ -250,17 +185,13 @@
         "type": "model",
         "pointsCost": 90,
         "count": 1,
+        "leadership": 9,
         "image": "",
         "description": "",
-        "mounts": [
-            {
-                "name": "Death Hag (on Foot)",
-                "pointsCost": 90
-            },
-            {
-                "name": "Death Hag (on Cauldron of Blood)",
-                "pointsCost": 200
-            }
+        "giftsOfKhaine": 50,
+        "options": [
+            { "name": "Cauldron of Blood", "pointsCost": 110 },
+            { "name": "Battle Standard Bearer", "pointsCost": 25, "onePerArmy": true, "battleStandard": true }
         ]
     },
     {
@@ -392,8 +323,8 @@
             { "role": "champion", "name": "Bloodshade", "pointsCost": 18 }
         ],
         "options": [
-            { "name": "Great weapon", "pointsCost": 2, "perModel": true, "group": "weapon" },
-            { "name": "Additional hand weapon", "pointsCost": 1, "perModel": true, "group": "weapon" },
+            { "name": "Great weapon", "pointsCost": 2, "perModel": true, "group": "Weapon" },
+            { "name": "Additional hand weapon", "pointsCost": 1, "perModel": true, "group": "Weapon" },
             { "name": "Light armour", "pointsCost": 1, "perModel": true }
         ]
     },
@@ -533,6 +464,7 @@
         "name": "Dispel Scroll",
         "category": "magic",
         "type": "arcane_item",
+        "stackable": true,
         "pointsCost": 25,
         "image": "",
         "repeatable": true,
@@ -542,6 +474,7 @@
         "name": "Power Stone",
         "category": "magic",
         "type": "arcane_item",
+        "stackable": true,
         "pointsCost": 20,
         "image": "",
         "repeatable": true,
@@ -615,6 +548,7 @@
         "name": "Executioner's Axe (Models on foot only)",
         "category": "magic",
         "type": "magic_weapon",
+        "onFootOnly": true,
         "pointsCost": 80,
         "image": "",
         "description": "The Executioner's Axe is a huge, black-bladed weapon bound with spells of dismemberment. A single blow from it can cut any opponent in half.<br>Requires two hands. Strikes last. In close combat, the wielder counts as having a Strength double that of their target's Toughness, up to a maximum of Strength 10. In addition, the Executioner's Axe causes D3 wounds."
@@ -993,6 +927,7 @@
         "name": "Venom Sword (Magic weapon)",
         "category": "magic",
         "type": "gifts_of_khaine",
+        "countsAs": "magic_weapon",
         "pointsCost": 75,
         "image": "",
         "description": "The Venom Sword is quenched in the poison of a thousand malicious serpents. When it strikes, mystical poisons flow into the veins of its victim.<br>Magic weapon. Any model that takes a wound from the Venom Sword (after saves, etc) must roll equal to or under its Toughness on 2D6 or automatically lose all remaining wounds."
@@ -1001,6 +936,7 @@
         "name": "Cloak of Twilight (Enchanted item, Assassins only)",
         "category": "magic",
         "type": "gifts_of_khaine",
+        "countsAs": "enchanted_item",
         "onlyFor": ["Dark Elf Assassin"],
         "pointsCost": 20,
         "image": "",

@@ -10,5 +10,6 @@ export const MAGIC_TYPE_LABELS = {
   arcane_item: 'Arcane Items', enchanted_item: 'Enchanted Items',
   magic_standard: 'Magic Standards', gifts_of_khaine: 'Gifts of Khaine',
 }
-// Champions are not wizards, so no arcane items
-export const CHAMPION_ITEM_TYPES = ['magic_weapon', 'magic_armour', 'talisman', 'enchanted_item']
+// What a champion or character may take; wizards add arcane items
+export const MAGIC_ITEM_TYPES = ['magic_weapon', 'magic_armour', 'talisman', 'enchanted_item']
+export const WIZARD_ITEM_TYPES = [...MAGIC_ITEM_TYPES, 'arcane_item']

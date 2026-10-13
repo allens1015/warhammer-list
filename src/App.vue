@@ -17,6 +17,7 @@ const {
   toggleOption,
   selectItem,
   removeItem,
+  setGeneral,
   remove,
   reset,
   switchArmy,
@@ -44,6 +45,7 @@ const {
         @toggle-option="toggleOption"
         @select-item="selectItem"
         @remove-item="removeItem"
+        @set-general="setGeneral"
         @remove="remove"
       />
     </div>
