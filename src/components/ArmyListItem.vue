@@ -1,9 +1,9 @@
 <script setup>
-import { Info, X } from 'lucide-vue-next'
+import { Copy, Info, X } from 'lucide-vue-next'
 import { computed } from 'vue'
 
 const props = defineProps({ unit: Object })
-const emit = defineEmits(['resize', 'toggle-command', 'toggle-option', 'select-item', 'remove-item', 'set-general', 'remove'])
+const emit = defineEmits(['resize', 'toggle-command', 'toggle-option', 'select-item', 'remove-item', 'set-general', 'duplicate', 'remove'])
 
 const cost = o => `${o.pointsCost ? `+${o.pointsCost}` : 'free'}${o.perModel ? ' / model' : ''}`
 
@@ -83,10 +83,21 @@ const chipClass = selected => [
         General
       </label>
       <button
-        class="p-1 opacity-0 group-hover:opacity-100 hover:bg-neutral-200 rounded transition-all shrink-0"
+        class="ml-auto p-1 border border-border rounded-md text-muted-foreground hover:bg-accent hover:text-foreground transition-colors shrink-0 disabled:opacity-40 disabled:hover:bg-transparent"
+        :aria-label="`Duplicate ${unit.name}`"
+        :title="unit.canDuplicate ? `Duplicate ${unit.name}` : `Only one ${unit.name} per army`"
+        :disabled="!unit.canDuplicate"
+        @click="emit('duplicate', unit.id)"
+      >
+        <Copy class="w-4 h-4" />
+      </button>
+      <button
+        class="p-1 border border-border rounded-md text-muted-foreground hover:bg-accent hover:text-destructive transition-colors shrink-0"
+        :aria-label="`Remove ${unit.name}`"
+        :title="`Remove ${unit.name}`"
         @click="emit('remove', unit.id)"
       >
-        <X class="w-3 h-3" />
+        <X class="w-4 h-4" />
       </button>
     </div>
 

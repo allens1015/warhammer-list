@@ -17,11 +17,11 @@ Forked in spirit from `../warhammer-draft` (same stack, shell, design tokens, an
 | File | Role |
 |---|---|
 | `src/composables/listConfig.js` | Static config: `CATEGORY_ORDER`, `CATEGORY_LABELS`, `ROLE_LABELS`, `MAGIC_TYPE_LABELS`, `MAGIC_ITEM_TYPES`, `WIZARD_ITEM_TYPES` |
-| `src/composables/useList.js` | All state and logic: army selection, `armyList`, points, slots, `available`, `listJson`, `add` / `resize` / `toggleCommand` / `toggleOption` / `selectItem` / `removeItem` / `remove` / `reset` / `switchArmy` |
+| `src/composables/useList.js` | All state and logic: army selection, `armyList`, points, slots, `available`, `listJson`, `add` / `resize` / `toggleCommand` / `toggleOption` / `selectItem` / `removeItem` / `setGeneral` / `duplicate` / `remove` / `reset` / `switchArmy` |
 | `src/App.vue` | Root shell. Calls `useList()`, passes state down. |
 | `src/components/SettingsPanel.vue` | Army dropdown, points cap, composition counts, Reset button. |
-| `src/components/ArmyList.vue` | Points total, Copy JSON, one section per category with a plus button that opens the add-unit menu. |
-| `src/components/ArmyListItem.vue` | One unit row: size input (multi-model units), name, cost, tooltip, remove, plus a line of command/option toggle chips. |
+| `src/components/ArmyList.vue` | Points total, Copy List (plain text), one section per category with a plus button that opens the add-unit menu. |
+| `src/components/ArmyListItem.vue` | One unit row: size input (multi-model units), name, cost, tooltip, General checkbox, duplicate and remove buttons, plus a line of command/option toggle chips. |
 | `src/data/dark-elves.json`, `skaven.json` | Unit data. |
 | `src/data/settings.json` | Composition brackets, default points cap. |
 | `deploy-local.sh` | Build and copy assets into the local Drupal module. |
@@ -84,7 +84,7 @@ User-confirmed rules: one magic item of each type per model; Gifts of Khaine are
 
 `count * (pointsCost + selected perModel options) + selected flat options + selected command + selected magic items`
 
-`listJson` (the render source and Copy JSON payload) has one section per category, always present, built from `resolvedList`. `armyList` plus the army key and points cap is the natural save format.
+`listJson` (the render source) has one section per category, always present, built from `resolvedList`. `listText` turns it into the plain-text export behind the Copy List button (the earlier Copy JSON button was dropped at the user's request). `armyList` plus the army key and points cap is the natural save format.
 
 ---
 

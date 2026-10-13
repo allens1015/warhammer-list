@@ -7,6 +7,7 @@ const {
   selectedArmy,
   pointsCap,
   listJson,
+  listText,
   available,
   overCap,
   slots,
@@ -18,6 +19,7 @@ const {
   selectItem,
   removeItem,
   setGeneral,
+  duplicate,
   remove,
   reset,
   switchArmy,
@@ -37,6 +39,7 @@ const {
       />
       <ArmyList
         :list="listJson"
+        :text="listText"
         :available="available"
         :over-cap="overCap"
         @add="add"
@@ -46,6 +49,7 @@ const {
         @select-item="selectItem"
         @remove-item="removeItem"
         @set-general="setGeneral"
+        @duplicate="duplicate"
         @remove="remove"
       />
     </div>

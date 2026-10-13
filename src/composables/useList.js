@@ -242,6 +242,7 @@ export function useList() {
         name: unit.name,
         category: categoryOf(unit),
         countsAsCore: categoryOf(unit) === 'core' && unit.countsAsCore !== false,
+        canDuplicate: unit.repeatable !== false,
         canBeGeneral: canBeGeneral(unit),
         isGeneral: entry.id === generalId.value,
         generalWarning: entry.id === generalId.value ? generalWarning.value : null,
@@ -316,6 +317,32 @@ export function useList() {
       }
     }),
   }))
+
+  // Plain-text export for pasting into a text file or message
+  const listText = computed(() => {
+    const list = listJson.value
+    const lines = [
+      `${ARMY_DATA[list.army].label} - ${list.pointsTotal} / ${list.pointsCap} pts`,
+    ]
+    for (const section of list.sections) {
+      if (!section.units.length) continue
+      lines.push('', `${section.label.toUpperCase()} (${section.pointsTotal} pts)`)
+      for (const u of section.units) {
+        const size = u.sizable ? `${u.count} ` : ''
+        lines.push(`${size}${u.name}${u.isGeneral ? ' (General)' : ''} - ${u.totalCost} pts`)
+        const gear = [...u.options, ...u.command].filter(x => x.selected).map(x => x.label)
+        if (gear.length) lines.push(`  ${gear.join(', ')}`)
+        for (const slot of u.slots) {
+          const items = slot.choices
+            .filter(i => i.selected)
+            .map(i => `${i.name}${i.qty > 1 ? ` x${i.qty}` : ''} (${i.pointsCost * i.qty})`)
+          if (items.length) lines.push(`  ${slot.label}: ${items.join(', ')}`)
+        }
+      }
+    }
+    lines.push('', `TOTAL: ${list.pointsTotal} pts`)
+    return lines.join('\n')
+  })
 
   function add(unit) {
     // A required group starts on its first option
@@ -408,6 +435,32 @@ export function useList() {
     pruneItems(entry)
   }
 
+  // Copies a unit with its size and selections, placed directly after it.
+  // Anything limited to one per army stays with the original.
+  function duplicate(id) {
+    const at = armyList.value.findIndex(u => u.id === id)
+    if (at < 0) return
+    const entry = armyList.value[at]
+    const unit = unitFor(entry)
+    if (unit.repeatable === false) return
+    const unique = {
+      command: (unit.command ?? []).filter(c => c.repeatable === false).map(commandKey),
+      options: (unit.options ?? []).filter(o => o.onePerArmy).map(o => o.name),
+    }
+    const repeatable = name => activeUnits.value.find(i => i.name === name)?.repeatable === true
+    armyList.value.splice(at + 1, 0, {
+      id: nextId++,
+      name: entry.name,
+      count: entry.count,
+      command: entry.command.filter(k => !unique.command.includes(k)),
+      options: entry.options.filter(n => !unique.options.includes(n)),
+      items: Object.fromEntries(
+        Object.entries(entry.items).map(([slot, names]) => [slot, names.filter(repeatable)])
+      ),
+    })
+    pruneItems(armyList.value[at + 1])
+  }
+
   function remove(id) {
     armyList.value = armyList.value.filter(u => u.id !== id)
     if (generalId.value === id) generalId.value = null
@@ -428,6 +481,7 @@ export function useList() {
     pointsCap,
     armyList,
     listJson,
+    listText,
     available,
     pointsTotal,
     overCap,
@@ -440,6 +494,7 @@ export function useList() {
     selectItem,
     removeItem,
     setGeneral,
+    duplicate,
     remove,
     reset,
     switchArmy,

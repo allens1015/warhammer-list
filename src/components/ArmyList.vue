@@ -5,11 +5,12 @@ import ArmyListItem from './ArmyListItem.vue'
 
 const props = defineProps({
   list: Object,
+  text: String,
   available: Object,
   overCap: Boolean,
 })
 
-const emit = defineEmits(['add', 'resize', 'toggle-command', 'toggle-option', 'select-item', 'remove-item', 'set-general', 'remove'])
+const emit = defineEmits(['add', 'resize', 'toggle-command', 'toggle-option', 'select-item', 'remove-item', 'set-general', 'duplicate', 'remove'])
 
 const openCategory = ref(null)
 const copied = ref(false)
@@ -24,7 +25,7 @@ function addUnit(unit) {
 }
 
 function copyToClipboard() {
-  navigator.clipboard.writeText(JSON.stringify(props.list, null, 2))
+  navigator.clipboard.writeText(props.text)
   copied.value = true
   setTimeout(() => { copied.value = false }, 2000)
 }
@@ -46,7 +47,7 @@ function copyToClipboard() {
         class="px-4 py-2 text-sm border border-border rounded-md hover:bg-accent transition-colors"
         @click="copyToClipboard"
       >
-        {{ copied ? 'Copied!' : 'Copy JSON' }}
+        {{ copied ? 'Copied!' : 'Copy List' }}
       </button>
     </div>
 
@@ -108,6 +109,7 @@ function copyToClipboard() {
           @select-item="(id, slot, name) => emit('select-item', id, slot, name)"
           @remove-item="(id, slot, name) => emit('remove-item', id, slot, name)"
           @set-general="emit('set-general', $event)"
+          @duplicate="emit('duplicate', $event)"
           @remove="emit('remove', $event)"
         />
       </ul>
