@@ -344,6 +344,9 @@ export function useList() {
     return lines.join('\n')
   })
 
+  const clampSize = (unit, count) =>
+    Math.min(Math.max(Math.floor(count) || 0, unit.minSize ?? 1), unit.maxSize ?? Infinity)
+
   function add(unit) {
     // A required group starts on its first option
     const required = new Map()
@@ -364,10 +367,7 @@ export function useList() {
     const entry = armyList.value.find(u => u.id === id)
     if (!entry) return
     const unit = unitFor(entry)
-    if ((unit.count ?? 1) > 1) {
-      const size = Math.floor(count) || 0
-      entry.count = Math.min(Math.max(size, unit.minSize ?? 1), unit.maxSize ?? Infinity)
-    }
+    if ((unit.count ?? 1) > 1) entry.count = clampSize(unit, count)
   }
 
   // Selecting a command entry replaces any other entry with the same role
@@ -476,6 +476,60 @@ export function useList() {
     selectedArmy.value = key
   }
 
+  // The save format: selections only, no ids. The General is stored as an
+  // index into `entries`.
+  function snapshot() {
+    const general = armyList.value.findIndex(e => e.id === generalId.value)
+    return {
+      army: selectedArmy.value,
+      pointsCap: pointsCap.value,
+      general: general < 0 ? null : general,
+      entries: armyList.value.map(e => ({
+        name: e.name,
+        count: e.count,
+        command: [...e.command],
+        options: [...e.options],
+        items: Object.fromEntries(
+          Object.entries(e.items)
+            .filter(([, names]) => names.length)
+            .sort(([a], [b]) => a.localeCompare(b))
+            .map(([slot, names]) => [slot, [...names]])
+        ),
+      })),
+    }
+  }
+
+  // Replaces the current list with a snapshot. Anything the unit data no
+  // longer has (unit, command entry, option, item) is dropped.
+  function load(saved) {
+    if (!ARMY_DATA[saved?.army]) return false
+    selectedArmy.value = saved.army
+    pointsCap.value = Number(saved.pointsCap) || settings.pointsCapDefault
+    generalId.value = null
+    const entries = []
+    ;(saved.entries ?? []).forEach((s, i) => {
+      const unit = activeUnits.value.find(u => u.name === s.name && u.category !== 'magic')
+      if (!unit) return
+      const commandKeys = (unit.command ?? []).map(commandKey)
+      const optionNames = (unit.options ?? []).map(o => o.name)
+      const entry = {
+        id: nextId++,
+        name: unit.name,
+        count: (unit.count ?? 1) > 1 ? clampSize(unit, s.count) : 1,
+        command: (s.command ?? []).filter(k => commandKeys.includes(k)),
+        options: (s.options ?? []).filter(n => optionNames.includes(n)),
+        items: Object.fromEntries(
+          Object.entries(s.items ?? {}).map(([slot, names]) => [slot, [...names]])
+        ),
+      }
+      entries.push(entry)
+      if (i === saved.general && canBeGeneral(unit)) generalId.value = entry.id
+    })
+    armyList.value = entries
+    armyList.value.forEach(pruneItems)
+    return true
+  }
+
   return {
     selectedArmy,
     pointsCap,
@@ -498,5 +552,7 @@ export function useList() {
     remove,
     reset,
     switchArmy,
+    snapshot,
+    load,
   }
 }
